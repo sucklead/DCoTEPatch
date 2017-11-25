@@ -56,6 +56,22 @@ namespace DCoTEPatch
 
         private Dictionary<BatNames, BatFile> BatFiles = new Dictionary<BatNames, BatFile>();
 
+        public enum ShaderNames
+        {
+            psModulateColorByAlpha,
+            Skydome_NoColor
+        };
+        
+        public class ShaderFile
+        {
+            public ShaderNames Name { get; set; }
+            public string Filename { get; set; }
+            public int Filesize { get; set; }
+            public byte[] Contents;
+        }
+        
+        private Dictionary<ShaderNames, ShaderFile> ShaderFiles = new Dictionary<ShaderNames, ShaderFile>();
+        
         private System.Windows.Forms.OpenFileDialog openExeFileDialog;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnSave;
@@ -301,7 +317,7 @@ namespace DCoTEPatch
         private CheckBox cbUnlockCinematics;
         private CheckBox cbUnlockDifficultyLevels;
         private CheckBox cbDoubleTimeEscapeSequence;
-        private CheckBox checkBoxFixShaders;
+        private CheckBox checkBoxFixBlueLightShader;
 
         /// <summary>
         /// Required designer variable.
@@ -446,7 +462,7 @@ namespace DCoTEPatch
             this.cbUnlockDifficultyLevels = new System.Windows.Forms.CheckBox();
             this.tbVersion = new System.Windows.Forms.TextBox();
             this.gbBugFixes = new System.Windows.Forms.GroupBox();
-            this.checkBoxFixShaders = new System.Windows.Forms.CheckBox();
+            this.checkBoxFixBlueLightShader = new System.Windows.Forms.CheckBox();
             this.checkBoxFixBlueLight = new System.Windows.Forms.CheckBox();
             this.linkLabelCoCF = new System.Windows.Forms.LinkLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -875,7 +891,7 @@ namespace DCoTEPatch
             // 
             // gbBugFixes
             // 
-            this.gbBugFixes.Controls.Add(this.checkBoxFixShaders);
+            this.gbBugFixes.Controls.Add(this.checkBoxFixBlueLightShader);
             this.gbBugFixes.Controls.Add(this.checkBoxFixBlueLight);
             this.gbBugFixes.Location = new System.Drawing.Point(6, 26);
             this.gbBugFixes.Name = "gbBugFixes";
@@ -884,16 +900,16 @@ namespace DCoTEPatch
             this.gbBugFixes.TabStop = false;
             this.gbBugFixes.Text = "Bug fixes";
             // 
-            // checkBoxFixShaders
+            // checkBoxFixBlueLightShader
             // 
-            this.checkBoxFixShaders.AutoSize = true;
-            this.checkBoxFixShaders.Location = new System.Drawing.Point(21, 36);
-            this.checkBoxFixShaders.Name = "checkBoxFixShaders";
-            this.checkBoxFixShaders.Size = new System.Drawing.Size(477, 17);
-            this.checkBoxFixShaders.TabIndex = 1;
-            this.checkBoxFixShaders.Text = "Modify blue light shader to allow normal completion of sorcerers (no need for abo" +
+            this.checkBoxFixBlueLightShader.AutoSize = true;
+            this.checkBoxFixBlueLightShader.Location = new System.Drawing.Point(21, 36);
+            this.checkBoxFixBlueLightShader.Name = "checkBoxFixShaders";
+            this.checkBoxFixBlueLightShader.Size = new System.Drawing.Size(477, 17);
+            this.checkBoxFixBlueLightShader.TabIndex = 1;
+            this.checkBoxFixBlueLightShader.Text = "Modify blue light shader to allow normal completion of sorcerers (no need for abo" +
     "ve workaround)";
-            this.checkBoxFixShaders.UseVisualStyleBackColor = true;
+            this.checkBoxFixBlueLightShader.UseVisualStyleBackColor = true;
             // 
             // checkBoxFixBlueLight
             // 
@@ -3291,6 +3307,12 @@ namespace DCoTEPatch
             BatFiles.Add(BatNames.misc03_asylum_cutscene_feds, new BatFile() { Name = BatNames.misc03_asylum_cutscene_feds, Filename = filename.Replace(@"Engine\CoCMainWin32.exe", @"scripts\misc03_asylum_cutscene_feds.bat"), Filesize = 374145 });
 
 
+            ShaderFiles.Clear();
+            ShaderFiles.Add(ShaderNames.psModulateColorByAlpha, new ShaderFile() { Name = ShaderNames.psModulateColorByAlpha, Filename = filename.Replace(@"Engine\CoCMainWin32.exe", @"Resources\PC\SHADERS\psModulateColorByAlpha.pso"), Filesize = 492 });
+            ShaderFiles.Add(ShaderNames.Skydome_NoColor, new ShaderFile() { Name = ShaderNames.Skydome_NoColor, Filename = filename.Replace(@"Engine\CoCMainWin32.exe", @"Resources\PC\SHADERS\Skydome_NoColor.vso"), Filesize = 1280 });
+
+
+
             //mapCityOfDreams03name = filename.Replace(@"Engine\CoCMainWin32.exe", @"scripts\misc01_city_of_dreams_03.bat");
 
             ////did we do a valid replace?
@@ -3330,6 +3352,15 @@ namespace DCoTEPatch
                     if (!LoadFileToMemory(batFile.Filename, out batFile.Contents, batFile.Filesize, batFile.Filesize, batFile.Filesize))
                     {
                         MessageBox.Show(string.Format("Error, couldn't load {0} ", batFile.Name));
+                        return;
+                    }
+                }
+
+                foreach (ShaderFile shaderFile in ShaderFiles.Values)
+                {
+                    if (!LoadFileToMemory(shaderFile.Filename, out shaderFile.Contents, shaderFile.Filesize, shaderFile.Filesize, shaderFile.Filesize))
+                    {
+                        MessageBox.Show(string.Format("Error, couldn't load {0} ", shaderFile.Name));
                         return;
                     }
                 }
@@ -3458,6 +3489,11 @@ namespace DCoTEPatch
                 SaveFileFromMemory(batFile.Filename, batFile.Filename.Replace(".bat", ".original.bat"), batFile.Contents);
             }
 
+            foreach (ShaderFile shaderFile in ShaderFiles.Values)
+            {
+                SaveFileFromMemory(shaderFile.Filename, shaderFile.Filename.Replace(".vso", ".original.vso").Replace(".pso", ".original.pso"), shaderFile.Contents);
+            }
+
             //SaveFileFromMemory(mapCityOfDreams03name, mapCityOfDreams03name.Replace(".bat", ".original.bat"), mapCityOfDreams03);
 
             //SaveFileFromMemory(map08Boatname, map08Boatname.Replace(".bat", ".original.bat"), map08Boat);
@@ -3479,6 +3515,7 @@ namespace DCoTEPatch
             //if (!D2DVersion)
             //{
             checkBoxFixBlueLight.Checked = (BatFiles[BatNames._08_boat].Contents[0x1F885] == 0x03);
+            checkBoxFixBlueLightShader.Checked = (ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B0] == 0x00);
             //}
             //city of dreams change
             checkBoxExtendedMovie.Checked = (BatFiles[BatNames.misc01_city_of_dreams_03].Contents[3790] == 1);
@@ -3816,6 +3853,38 @@ namespace DCoTEPatch
 
 
                 BatFiles[BatNames._08_boat].Contents[0x1F885] = 0x00;
+            }
+
+            if (checkBoxFixBlueLightShader.Checked)
+            {
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B0] = 0x00;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B1] = 0x00;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B2] = 0x80;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B3] = 0xBF;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B4] = 0x00;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B5] = 0x00;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B6] = 0x80;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B7] = 0xBF;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B8] = 0x00;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B9] = 0x00;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1BA] = 0x80;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1BB] = 0xBF;
+
+            }
+            else
+            {
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B0] = 0xBC;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B1] = 0x74;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B2] = 0x13;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B3] = 0xBC;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B4] = 0xBC;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B5] = 0x74;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B6] = 0x13;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B7] = 0xBC;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B8] = 0xBC;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B9] = 0x74;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1BA] = 0x13;
+                ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1BB] = 0xBC;
             }
 
             //city of dreams change
