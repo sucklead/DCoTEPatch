@@ -318,6 +318,7 @@ namespace DCoTEPatch
         private CheckBox cbUnlockDifficultyLevels;
         private CheckBox cbDoubleTimeEscapeSequence;
         private CheckBox checkBoxFixBlueLightShader;
+        private CheckBox checkBoxModifySkydomeShader;
 
         /// <summary>
         /// Required designer variable.
@@ -462,203 +463,137 @@ namespace DCoTEPatch
             this.cbUnlockDifficultyLevels = new System.Windows.Forms.CheckBox();
             this.tbVersion = new System.Windows.Forms.TextBox();
             this.gbBugFixes = new System.Windows.Forms.GroupBox();
+            this.checkBoxModifySkydomeShader = new System.Windows.Forms.CheckBox();
             this.checkBoxFixBlueLightShader = new System.Windows.Forms.CheckBox();
             this.checkBoxFixBlueLight = new System.Windows.Forms.CheckBox();
             this.linkLabelCoCF = new System.Windows.Forms.LinkLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupboxXbill = new System.Windows.Forms.GroupBox();
-            this.checkBoxFilmEffects = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxExtendedMovie = new DCoTEPatch.DCoTECheckBox();
             this.groupBoxEnhance = new System.Windows.Forms.GroupBox();
-            this.checkBoxAllowLegalSkip = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxSkipVideos = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxReachArm = new DCoTEPatch.DCoTECheckBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBoxCheats = new System.Windows.Forms.GroupBox();
-            this.checkBoxGodMode = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxDebugMode = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxFlyMode = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxPickStartMap = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxUnlockAllContent = new DCoTEPatch.DCoTECheckBox();
-            this.checkBoxReleaseMode = new DCoTEPatch.DCoTECheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblFOV = new System.Windows.Forms.Label();
-            this.mebFOV = new DCoTEPatch.DCoTEFloatBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.mebFOVSneak = new DCoTEPatch.DCoTEFloatBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label108 = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox47 = new DCoTEPatch.DCoTEFloatBox();
             this.label106 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox46 = new DCoTEPatch.DCoTEFloatBox();
             this.label104 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox45 = new DCoTEPatch.DCoTEFloatBox();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox44 = new DCoTEPatch.DCoTEFloatBox();
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox43 = new DCoTEPatch.DCoTEFloatBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.mebMorphine = new DCoTEPatch.DCoTEFloatBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.mebBandages = new DCoTEPatch.DCoTEFloatBox();
-            this.mebSplints = new DCoTEPatch.DCoTEFloatBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.mebSutures = new DCoTEPatch.DCoTEFloatBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox16 = new DCoTEPatch.DCoTEFloatBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox20 = new DCoTEPatch.DCoTEFloatBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox21 = new DCoTEPatch.DCoTEFloatBox();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox22 = new DCoTEPatch.DCoTEFloatBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox17 = new DCoTEPatch.DCoTEFloatBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox18 = new DCoTEPatch.DCoTEFloatBox();
-            this.DCoTEFloatBox19 = new DCoTEPatch.DCoTEFloatBox();
             this.label55 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox5 = new DCoTEPatch.DCoTEFloatBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.mebCrawlSpeed = new DCoTEPatch.DCoTEFloatBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.mebWalkSpeed = new DCoTEPatch.DCoTEFloatBox();
-            this.DCoTEFloatBox3 = new DCoTEPatch.DCoTEFloatBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox4 = new DCoTEPatch.DCoTEFloatBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBoxInfinite = new System.Windows.Forms.GroupBox();
-            this.checkBoxInfiniteAmmo = new DCoTEPatch.DCoTECheckBox();
             this.groupBoxWeapons = new System.Windows.Forms.GroupBox();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox40 = new DCoTEPatch.DCoTEFloatBox();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox41 = new DCoTEPatch.DCoTEFloatBox();
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox42 = new DCoTEPatch.DCoTEFloatBox();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox37 = new DCoTEPatch.DCoTEFloatBox();
             this.label90 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox38 = new DCoTEPatch.DCoTEFloatBox();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox39 = new DCoTEPatch.DCoTEFloatBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox34 = new DCoTEPatch.DCoTEFloatBox();
             this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox35 = new DCoTEPatch.DCoTEFloatBox();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox36 = new DCoTEPatch.DCoTEFloatBox();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox31 = new DCoTEPatch.DCoTEFloatBox();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox32 = new DCoTEPatch.DCoTEFloatBox();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox33 = new DCoTEPatch.DCoTEFloatBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox30 = new DCoTEPatch.DCoTEFloatBox();
             this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox29 = new DCoTEPatch.DCoTEFloatBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox28 = new DCoTEPatch.DCoTEFloatBox();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox27 = new DCoTEPatch.DCoTEFloatBox();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox26 = new DCoTEPatch.DCoTEFloatBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox25 = new DCoTEPatch.DCoTEFloatBox();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox24 = new DCoTEPatch.DCoTEFloatBox();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.dCoTEFloatBox23 = new DCoTEPatch.DCoTEFloatBox();
             this.groupBoxDamage = new System.Windows.Forms.GroupBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox9 = new DCoTEPatch.DCoTEFloatBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox1 = new DCoTEPatch.DCoTEFloatBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox2 = new DCoTEPatch.DCoTEFloatBox();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox6 = new DCoTEPatch.DCoTEFloatBox();
-            this.DCoTEFloatBox7 = new DCoTEPatch.DCoTEFloatBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox8 = new DCoTEPatch.DCoTEFloatBox();
             this.groupBoxMelee = new System.Windows.Forms.GroupBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox10 = new DCoTEPatch.DCoTEFloatBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox11 = new DCoTEPatch.DCoTEFloatBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox12 = new DCoTEPatch.DCoTEFloatBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox13 = new DCoTEPatch.DCoTEFloatBox();
-            this.DCoTEFloatBox14 = new DCoTEPatch.DCoTEFloatBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.DCoTEFloatBox15 = new DCoTEPatch.DCoTEFloatBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBoxAdvancedXML = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -667,6 +602,73 @@ namespace DCoTEPatch
             this.btnExtractXML = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkBoxFilmEffects = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxExtendedMovie = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxAllowLegalSkip = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxSkipVideos = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxReachArm = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxGodMode = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxDebugMode = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxFlyMode = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxPickStartMap = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxUnlockAllContent = new DCoTEPatch.DCoTECheckBox();
+            this.checkBoxReleaseMode = new DCoTEPatch.DCoTECheckBox();
+            this.mebFOV = new DCoTEPatch.DCoTEFloatBox();
+            this.mebFOVSneak = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox47 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox46 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox45 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox44 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox43 = new DCoTEPatch.DCoTEFloatBox();
+            this.mebMorphine = new DCoTEPatch.DCoTEFloatBox();
+            this.mebBandages = new DCoTEPatch.DCoTEFloatBox();
+            this.mebSplints = new DCoTEPatch.DCoTEFloatBox();
+            this.mebSutures = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox16 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox20 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox21 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox22 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox17 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox18 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox19 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox5 = new DCoTEPatch.DCoTEFloatBox();
+            this.mebCrawlSpeed = new DCoTEPatch.DCoTEFloatBox();
+            this.mebWalkSpeed = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox3 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox4 = new DCoTEPatch.DCoTEFloatBox();
+            this.checkBoxInfiniteAmmo = new DCoTEPatch.DCoTECheckBox();
+            this.dCoTEFloatBox40 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox41 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox42 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox37 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox38 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox39 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox34 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox35 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox36 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox31 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox32 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox33 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox30 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox29 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox28 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox27 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox26 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox25 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox24 = new DCoTEPatch.DCoTEFloatBox();
+            this.dCoTEFloatBox23 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox9 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox1 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox2 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox6 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox7 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox8 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox10 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox11 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox12 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox13 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox14 = new DCoTEPatch.DCoTEFloatBox();
+            this.DCoTEFloatBox15 = new DCoTEPatch.DCoTEFloatBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgSettings)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -718,7 +720,7 @@ namespace DCoTEPatch
             this.dgSettings.ParentRowsForeColor = System.Drawing.Color.Black;
             this.dgSettings.SelectionBackColor = System.Drawing.Color.Navy;
             this.dgSettings.SelectionForeColor = System.Drawing.Color.White;
-            this.dgSettings.Size = new System.Drawing.Size(544, 386);
+            this.dgSettings.Size = new System.Drawing.Size(544, 426);
             this.dgSettings.TabIndex = 0;
             // 
             // openExeFileDialog
@@ -738,7 +740,7 @@ namespace DCoTEPatch
             // btnSave
             // 
             this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnSave.Location = new System.Drawing.Point(6, 1);
+            this.btnSave.Location = new System.Drawing.Point(6, 41);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
@@ -756,13 +758,13 @@ namespace DCoTEPatch
             this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(12, 595);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(573, 26);
+            this.panel1.Size = new System.Drawing.Size(573, 66);
             this.panel1.TabIndex = 1;
             // 
             // btnRestoreToOriginals
             // 
             this.btnRestoreToOriginals.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRestoreToOriginals.Location = new System.Drawing.Point(106, 1);
+            this.btnRestoreToOriginals.Location = new System.Drawing.Point(106, 41);
             this.btnRestoreToOriginals.Name = "btnRestoreToOriginals";
             this.btnRestoreToOriginals.Size = new System.Drawing.Size(116, 23);
             this.btnRestoreToOriginals.TabIndex = 2;
@@ -773,7 +775,7 @@ namespace DCoTEPatch
             // btnResetToDefaults
             // 
             this.btnResetToDefaults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnResetToDefaults.Location = new System.Drawing.Point(461, 1);
+            this.btnResetToDefaults.Location = new System.Drawing.Point(461, 41);
             this.btnResetToDefaults.Name = "btnResetToDefaults";
             this.btnResetToDefaults.Size = new System.Drawing.Size(103, 23);
             this.btnResetToDefaults.TabIndex = 1;
@@ -784,7 +786,7 @@ namespace DCoTEPatch
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(6, 365);
+            this.textBox1.Location = new System.Drawing.Point(6, 405);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -808,7 +810,7 @@ namespace DCoTEPatch
             this.tabControl1.Location = new System.Drawing.Point(12, 102);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(576, 488);
+            this.tabControl1.Size = new System.Drawing.Size(576, 528);
             this.tabControl1.TabIndex = 10;
             // 
             // tabPage1
@@ -823,7 +825,7 @@ namespace DCoTEPatch
             this.tabPage1.Controls.Add(this.groupBoxEnhance);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(568, 462);
+            this.tabPage1.Size = new System.Drawing.Size(568, 502);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General Settings";
             // 
@@ -833,7 +835,7 @@ namespace DCoTEPatch
             this.group15Features.Controls.Add(this.cbGiveAllWeapons);
             this.group15Features.Controls.Add(this.cbUnlockCinematics);
             this.group15Features.Controls.Add(this.cbUnlockDifficultyLevels);
-            this.group15Features.Location = new System.Drawing.Point(6, 239);
+            this.group15Features.Location = new System.Drawing.Point(6, 279);
             this.group15Features.Name = "group15Features";
             this.group15Features.Size = new System.Drawing.Size(556, 120);
             this.group15Features.TabIndex = 15;
@@ -891,24 +893,35 @@ namespace DCoTEPatch
             // 
             // gbBugFixes
             // 
+            this.gbBugFixes.Controls.Add(this.checkBoxModifySkydomeShader);
             this.gbBugFixes.Controls.Add(this.checkBoxFixBlueLightShader);
             this.gbBugFixes.Controls.Add(this.checkBoxFixBlueLight);
-            this.gbBugFixes.Location = new System.Drawing.Point(6, 26);
+            this.gbBugFixes.Location = new System.Drawing.Point(6, 30);
             this.gbBugFixes.Name = "gbBugFixes";
-            this.gbBugFixes.Size = new System.Drawing.Size(556, 59);
+            this.gbBugFixes.Size = new System.Drawing.Size(556, 95);
             this.gbBugFixes.TabIndex = 14;
             this.gbBugFixes.TabStop = false;
             this.gbBugFixes.Text = "Bug fixes";
             // 
+            // checkBoxModifySkydomeShader
+            // 
+            this.checkBoxModifySkydomeShader.AutoSize = true;
+            this.checkBoxModifySkydomeShader.Location = new System.Drawing.Point(21, 65);
+            this.checkBoxModifySkydomeShader.Name = "checkBoxModifySkydomeShader";
+            this.checkBoxModifySkydomeShader.Size = new System.Drawing.Size(175, 17);
+            this.checkBoxModifySkydomeShader.TabIndex = 2;
+            this.checkBoxModifySkydomeShader.Text = "Modify skybox shader [by Guzz]";
+            this.checkBoxModifySkydomeShader.UseVisualStyleBackColor = true;
+            // 
             // checkBoxFixBlueLightShader
             // 
             this.checkBoxFixBlueLightShader.AutoSize = true;
-            this.checkBoxFixBlueLightShader.Location = new System.Drawing.Point(21, 36);
-            this.checkBoxFixBlueLightShader.Name = "checkBoxFixShaders";
-            this.checkBoxFixBlueLightShader.Size = new System.Drawing.Size(477, 17);
+            this.checkBoxFixBlueLightShader.Location = new System.Drawing.Point(21, 42);
+            this.checkBoxFixBlueLightShader.Name = "checkBoxFixBlueLightShader";
+            this.checkBoxFixBlueLightShader.Size = new System.Drawing.Size(524, 17);
             this.checkBoxFixBlueLightShader.TabIndex = 1;
             this.checkBoxFixBlueLightShader.Text = "Modify blue light shader to allow normal completion of sorcerers (no need for abo" +
-    "ve workaround)";
+    "ve workaround) [by Guzz]";
             this.checkBoxFixBlueLightShader.UseVisualStyleBackColor = true;
             // 
             // checkBoxFixBlueLight
@@ -926,7 +939,7 @@ namespace DCoTEPatch
             this.linkLabelCoCF.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.linkLabelCoCF.AutoSize = true;
-            this.linkLabelCoCF.Location = new System.Drawing.Point(24, 433);
+            this.linkLabelCoCF.Location = new System.Drawing.Point(24, 473);
             this.linkLabelCoCF.Name = "linkLabelCoCF";
             this.linkLabelCoCF.Size = new System.Drawing.Size(327, 13);
             this.linkLabelCoCF.TabIndex = 13;
@@ -938,7 +951,7 @@ namespace DCoTEPatch
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(6, 409);
+            this.textBox2.Location = new System.Drawing.Point(6, 449);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -950,74 +963,24 @@ namespace DCoTEPatch
             // 
             this.groupboxXbill.Controls.Add(this.checkBoxFilmEffects);
             this.groupboxXbill.Controls.Add(this.checkBoxExtendedMovie);
-            this.groupboxXbill.Location = new System.Drawing.Point(6, 161);
+            this.groupboxXbill.Location = new System.Drawing.Point(6, 201);
             this.groupboxXbill.Name = "groupboxXbill";
             this.groupboxXbill.Size = new System.Drawing.Size(556, 72);
             this.groupboxXbill.TabIndex = 10;
             this.groupboxXbill.TabStop = false;
             this.groupboxXbill.Text = "Extras discovered by xbill";
             // 
-            // checkBoxFilmEffects
-            // 
-            this.checkBoxFilmEffects.CodeOffset = 0;
-            this.checkBoxFilmEffects.DefaultValue = false;
-            this.checkBoxFilmEffects.Location = new System.Drawing.Point(21, 42);
-            this.checkBoxFilmEffects.Name = "checkBoxFilmEffects";
-            this.checkBoxFilmEffects.Size = new System.Drawing.Size(292, 17);
-            this.checkBoxFilmEffects.TabIndex = 9;
-            this.checkBoxFilmEffects.Text = "Disable Filmgrain/Letterbox on cutscenes";
-            // 
-            // checkBoxExtendedMovie
-            // 
-            this.checkBoxExtendedMovie.CodeOffset = 0;
-            this.checkBoxExtendedMovie.DefaultValue = false;
-            this.checkBoxExtendedMovie.Location = new System.Drawing.Point(21, 19);
-            this.checkBoxExtendedMovie.Name = "checkBoxExtendedMovie";
-            this.checkBoxExtendedMovie.Size = new System.Drawing.Size(292, 17);
-            this.checkBoxExtendedMovie.TabIndex = 8;
-            this.checkBoxExtendedMovie.Text = "Always Show Extended End Movie";
-            // 
             // groupBoxEnhance
             // 
             this.groupBoxEnhance.Controls.Add(this.checkBoxAllowLegalSkip);
             this.groupBoxEnhance.Controls.Add(this.checkBoxSkipVideos);
             this.groupBoxEnhance.Controls.Add(this.checkBoxReachArm);
-            this.groupBoxEnhance.Location = new System.Drawing.Point(6, 91);
+            this.groupBoxEnhance.Location = new System.Drawing.Point(6, 131);
             this.groupBoxEnhance.Name = "groupBoxEnhance";
             this.groupBoxEnhance.Size = new System.Drawing.Size(556, 64);
             this.groupBoxEnhance.TabIndex = 0;
             this.groupBoxEnhance.TabStop = false;
             this.groupBoxEnhance.Text = "Standard Enhancements";
-            // 
-            // checkBoxAllowLegalSkip
-            // 
-            this.checkBoxAllowLegalSkip.CodeOffset = 0;
-            this.checkBoxAllowLegalSkip.DefaultValue = false;
-            this.checkBoxAllowLegalSkip.Location = new System.Drawing.Point(21, 19);
-            this.checkBoxAllowLegalSkip.Name = "checkBoxAllowLegalSkip";
-            this.checkBoxAllowLegalSkip.Size = new System.Drawing.Size(152, 17);
-            this.checkBoxAllowLegalSkip.TabIndex = 9;
-            this.checkBoxAllowLegalSkip.Text = "Allow skip of legal video";
-            // 
-            // checkBoxSkipVideos
-            // 
-            this.checkBoxSkipVideos.CodeOffset = 2382035;
-            this.checkBoxSkipVideos.DefaultValue = false;
-            this.checkBoxSkipVideos.Location = new System.Drawing.Point(220, 19);
-            this.checkBoxSkipVideos.Name = "checkBoxSkipVideos";
-            this.checkBoxSkipVideos.Size = new System.Drawing.Size(192, 17);
-            this.checkBoxSkipVideos.TabIndex = 1;
-            this.checkBoxSkipVideos.Text = "Auto Skip All Startup Videos";
-            // 
-            // checkBoxReachArm
-            // 
-            this.checkBoxReachArm.CodeOffset = 2375501;
-            this.checkBoxReachArm.DefaultValue = false;
-            this.checkBoxReachArm.Location = new System.Drawing.Point(21, 42);
-            this.checkBoxReachArm.Name = "checkBoxReachArm";
-            this.checkBoxReachArm.Size = new System.Drawing.Size(229, 17);
-            this.checkBoxReachArm.TabIndex = 3;
-            this.checkBoxReachArm.Text = "Enable Reach Arm (Dropped feature)";
             // 
             // tabPage5
             // 
@@ -1025,7 +988,7 @@ namespace DCoTEPatch
             this.tabPage5.Controls.Add(this.groupBoxCheats);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(568, 462);
+            this.tabPage5.Size = new System.Drawing.Size(568, 502);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Cheats";
             // 
@@ -1044,67 +1007,6 @@ namespace DCoTEPatch
             this.groupBoxCheats.TabStop = false;
             this.groupBoxCheats.Text = "Cheats";
             // 
-            // checkBoxGodMode
-            // 
-            this.checkBoxGodMode.CodeOffset = 2375208;
-            this.checkBoxGodMode.DefaultValue = false;
-            this.checkBoxGodMode.Location = new System.Drawing.Point(21, 156);
-            this.checkBoxGodMode.Name = "checkBoxGodMode";
-            this.checkBoxGodMode.Size = new System.Drawing.Size(119, 17);
-            this.checkBoxGodMode.TabIndex = 6;
-            this.checkBoxGodMode.Text = "God Mode (yukk!)";
-            // 
-            // checkBoxDebugMode
-            // 
-            this.checkBoxDebugMode.CodeOffset = 2369703;
-            this.checkBoxDebugMode.DefaultValue = false;
-            this.checkBoxDebugMode.Location = new System.Drawing.Point(21, 19);
-            this.checkBoxDebugMode.Name = "checkBoxDebugMode";
-            this.checkBoxDebugMode.Size = new System.Drawing.Size(391, 17);
-            this.checkBoxDebugMode.TabIndex = 0;
-            this.checkBoxDebugMode.Text = "Enable Debug Mode (F1 to activate then w,x && ENTER to navigate)";
-            // 
-            // checkBoxFlyMode
-            // 
-            this.checkBoxFlyMode.CodeOffset = 2380692;
-            this.checkBoxFlyMode.DefaultValue = false;
-            this.checkBoxFlyMode.Location = new System.Drawing.Point(21, 134);
-            this.checkBoxFlyMode.Name = "checkBoxFlyMode";
-            this.checkBoxFlyMode.Size = new System.Drawing.Size(510, 17);
-            this.checkBoxFlyMode.TabIndex = 5;
-            this.checkBoxFlyMode.Text = "Start In Fly Mode (The Debug Mode menu allows fly mode to be toggled on/off at wi" +
-    "ll)";
-            // 
-            // checkBoxPickStartMap
-            // 
-            this.checkBoxPickStartMap.CodeOffset = 0;
-            this.checkBoxPickStartMap.DefaultValue = false;
-            this.checkBoxPickStartMap.Location = new System.Drawing.Point(21, 65);
-            this.checkBoxPickStartMap.Name = "checkBoxPickStartMap";
-            this.checkBoxPickStartMap.Size = new System.Drawing.Size(329, 17);
-            this.checkBoxPickStartMap.TabIndex = 4;
-            this.checkBoxPickStartMap.Text = "Allow choice of start map when starting a new game";
-            // 
-            // checkBoxUnlockAllContent
-            // 
-            this.checkBoxUnlockAllContent.CodeOffset = 0;
-            this.checkBoxUnlockAllContent.DefaultValue = false;
-            this.checkBoxUnlockAllContent.Location = new System.Drawing.Point(21, 88);
-            this.checkBoxUnlockAllContent.Name = "checkBoxUnlockAllContent";
-            this.checkBoxUnlockAllContent.Size = new System.Drawing.Size(391, 17);
-            this.checkBoxUnlockAllContent.TabIndex = 7;
-            this.checkBoxUnlockAllContent.Text = "Unlock All Bonus Content (Requires Debug Mode to also be enabled)";
-            // 
-            // checkBoxReleaseMode
-            // 
-            this.checkBoxReleaseMode.CodeOffset = 2370476;
-            this.checkBoxReleaseMode.DefaultValue = true;
-            this.checkBoxReleaseMode.Location = new System.Drawing.Point(21, 42);
-            this.checkBoxReleaseMode.Name = "checkBoxReleaseMode";
-            this.checkBoxReleaseMode.Size = new System.Drawing.Size(442, 17);
-            this.checkBoxReleaseMode.TabIndex = 2;
-            this.checkBoxReleaseMode.Text = "Release Mode (Untick this to allow Dev Continue when you die)";
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.groupBox3);
@@ -1115,7 +1017,7 @@ namespace DCoTEPatch
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(568, 462);
+            this.tabPage2.Size = new System.Drawing.Size(568, 502);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Player Settings";
             // 
@@ -1152,18 +1054,6 @@ namespace DCoTEPatch
             this.lblFOV.TabIndex = 6;
             this.lblFOV.Text = "FOV";
             // 
-            // mebFOV
-            // 
-            this.mebFOV.CodeOffset = 2374839;
-            this.mebFOV.DefaultValue = "55.0";
-            this.mebFOV.Location = new System.Drawing.Point(156, 13);
-            this.mebFOV.Mask = "##,#";
-            this.mebFOV.MaxValue = 99.9F;
-            this.mebFOV.Name = "mebFOV";
-            this.mebFOV.Size = new System.Drawing.Size(38, 20);
-            this.mebFOV.TabIndex = 0;
-            this.mebFOV.Text = "__._";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -1181,18 +1071,6 @@ namespace DCoTEPatch
             this.label3.Size = new System.Drawing.Size(81, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "(Default is 68.0)";
-            // 
-            // mebFOVSneak
-            // 
-            this.mebFOVSneak.CodeOffset = 2374887;
-            this.mebFOVSneak.DefaultValue = "68.0";
-            this.mebFOVSneak.Location = new System.Drawing.Point(156, 35);
-            this.mebFOVSneak.Mask = "##,#";
-            this.mebFOVSneak.MaxValue = 99.9F;
-            this.mebFOVSneak.Name = "mebFOVSneak";
-            this.mebFOVSneak.Size = new System.Drawing.Size(38, 20);
-            this.mebFOVSneak.TabIndex = 1;
-            this.mebFOVSneak.Text = "__._";
             // 
             // groupBox2
             // 
@@ -1248,18 +1126,6 @@ namespace DCoTEPatch
             this.label109.TabIndex = 36;
             this.label109.Text = "Treatment time overhead";
             // 
-            // dCoTEFloatBox47
-            // 
-            this.dCoTEFloatBox47.CodeOffset = 2377769;
-            this.dCoTEFloatBox47.DefaultValue = "2.0";
-            this.dCoTEFloatBox47.Location = new System.Drawing.Point(157, 199);
-            this.dCoTEFloatBox47.Mask = "#,#";
-            this.dCoTEFloatBox47.MaxValue = 9.9F;
-            this.dCoTEFloatBox47.Name = "dCoTEFloatBox47";
-            this.dCoTEFloatBox47.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox47.TabIndex = 35;
-            this.dCoTEFloatBox47.Text = "_,_";
-            // 
             // label106
             // 
             this.label106.AutoSize = true;
@@ -1277,18 +1143,6 @@ namespace DCoTEPatch
             this.label107.Size = new System.Drawing.Size(115, 13);
             this.label107.TabIndex = 33;
             this.label107.Text = "Antidote treatment time";
-            // 
-            // dCoTEFloatBox46
-            // 
-            this.dCoTEFloatBox46.CodeOffset = 2377708;
-            this.dCoTEFloatBox46.DefaultValue = "2.0";
-            this.dCoTEFloatBox46.Location = new System.Drawing.Point(157, 177);
-            this.dCoTEFloatBox46.Mask = "#,#";
-            this.dCoTEFloatBox46.MaxValue = 9.9F;
-            this.dCoTEFloatBox46.Name = "dCoTEFloatBox46";
-            this.dCoTEFloatBox46.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox46.TabIndex = 32;
-            this.dCoTEFloatBox46.Text = "_,_";
             // 
             // label104
             // 
@@ -1308,18 +1162,6 @@ namespace DCoTEPatch
             this.label105.TabIndex = 30;
             this.label105.Text = "Sutures treatment time";
             // 
-            // dCoTEFloatBox45
-            // 
-            this.dCoTEFloatBox45.CodeOffset = 2377648;
-            this.dCoTEFloatBox45.DefaultValue = "2.0";
-            this.dCoTEFloatBox45.Location = new System.Drawing.Point(157, 154);
-            this.dCoTEFloatBox45.Mask = "#,#";
-            this.dCoTEFloatBox45.MaxValue = 9.9F;
-            this.dCoTEFloatBox45.Name = "dCoTEFloatBox45";
-            this.dCoTEFloatBox45.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox45.TabIndex = 29;
-            this.dCoTEFloatBox45.Text = "_,_";
-            // 
             // label102
             // 
             this.label102.AutoSize = true;
@@ -1337,18 +1179,6 @@ namespace DCoTEPatch
             this.label103.Size = new System.Drawing.Size(102, 13);
             this.label103.TabIndex = 27;
             this.label103.Text = "Splint treatment time";
-            // 
-            // dCoTEFloatBox44
-            // 
-            this.dCoTEFloatBox44.CodeOffset = 2377590;
-            this.dCoTEFloatBox44.DefaultValue = "2.0";
-            this.dCoTEFloatBox44.Location = new System.Drawing.Point(157, 130);
-            this.dCoTEFloatBox44.Mask = "#,#";
-            this.dCoTEFloatBox44.MaxValue = 9.9F;
-            this.dCoTEFloatBox44.Name = "dCoTEFloatBox44";
-            this.dCoTEFloatBox44.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox44.TabIndex = 26;
-            this.dCoTEFloatBox44.Text = "_,_";
             // 
             // label100
             // 
@@ -1368,18 +1198,6 @@ namespace DCoTEPatch
             this.label101.TabIndex = 24;
             this.label101.Text = "Bandage treatment time (s)";
             // 
-            // dCoTEFloatBox43
-            // 
-            this.dCoTEFloatBox43.CodeOffset = 2377531;
-            this.dCoTEFloatBox43.DefaultValue = "2.0";
-            this.dCoTEFloatBox43.Location = new System.Drawing.Point(157, 106);
-            this.dCoTEFloatBox43.Mask = "#,#";
-            this.dCoTEFloatBox43.MaxValue = 9.9F;
-            this.dCoTEFloatBox43.Name = "dCoTEFloatBox43";
-            this.dCoTEFloatBox43.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox43.TabIndex = 23;
-            this.dCoTEFloatBox43.Text = "_,_";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -1397,18 +1215,6 @@ namespace DCoTEPatch
             this.label4.Size = new System.Drawing.Size(73, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "Morphine time";
-            // 
-            // mebMorphine
-            // 
-            this.mebMorphine.CodeOffset = 2377000;
-            this.mebMorphine.DefaultValue = "20.0";
-            this.mebMorphine.Location = new System.Drawing.Point(157, 13);
-            this.mebMorphine.Mask = "##,#";
-            this.mebMorphine.MaxValue = 99.9F;
-            this.mebMorphine.Name = "mebMorphine";
-            this.mebMorphine.Size = new System.Drawing.Size(38, 20);
-            this.mebMorphine.TabIndex = 0;
-            this.mebMorphine.Text = "__._";
             // 
             // label11
             // 
@@ -1455,30 +1261,6 @@ namespace DCoTEPatch
             this.label9.TabIndex = 20;
             this.label9.Text = "(Default is 5)";
             // 
-            // mebBandages
-            // 
-            this.mebBandages.CodeOffset = 2377850;
-            this.mebBandages.DefaultValue = "10";
-            this.mebBandages.Location = new System.Drawing.Point(157, 36);
-            this.mebBandages.Mask = "##";
-            this.mebBandages.MaxValue = 99F;
-            this.mebBandages.Name = "mebBandages";
-            this.mebBandages.Size = new System.Drawing.Size(38, 20);
-            this.mebBandages.TabIndex = 1;
-            this.mebBandages.Text = "__";
-            // 
-            // mebSplints
-            // 
-            this.mebSplints.CodeOffset = 2377890;
-            this.mebSplints.DefaultValue = "5";
-            this.mebSplints.Location = new System.Drawing.Point(157, 59);
-            this.mebSplints.Mask = "#";
-            this.mebSplints.MaxValue = 9F;
-            this.mebSplints.Name = "mebSplints";
-            this.mebSplints.Size = new System.Drawing.Size(38, 20);
-            this.mebSplints.TabIndex = 2;
-            this.mebSplints.Text = "_";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -1487,18 +1269,6 @@ namespace DCoTEPatch
             this.label8.Size = new System.Drawing.Size(61, 13);
             this.label8.TabIndex = 18;
             this.label8.Text = "Max Splints";
-            // 
-            // mebSutures
-            // 
-            this.mebSutures.CodeOffset = 2377928;
-            this.mebSutures.DefaultValue = "5";
-            this.mebSutures.Location = new System.Drawing.Point(157, 82);
-            this.mebSutures.Mask = "#";
-            this.mebSutures.MaxValue = 9F;
-            this.mebSutures.Name = "mebSutures";
-            this.mebSutures.Size = new System.Drawing.Size(38, 20);
-            this.mebSutures.TabIndex = 3;
-            this.mebSutures.Text = "_";
             // 
             // groupBox8
             // 
@@ -1533,18 +1303,6 @@ namespace DCoTEPatch
             this.label47.TabIndex = 12;
             this.label47.Text = "Sanity recovered per 0.1 seconds";
             // 
-            // DCoTEFloatBox16
-            // 
-            this.DCoTEFloatBox16.CodeOffset = 2387234;
-            this.DCoTEFloatBox16.DefaultValue = "0.08";
-            this.DCoTEFloatBox16.Location = new System.Drawing.Point(181, 13);
-            this.DCoTEFloatBox16.Mask = "#,##";
-            this.DCoTEFloatBox16.MaxValue = 9.99F;
-            this.DCoTEFloatBox16.Name = "DCoTEFloatBox16";
-            this.DCoTEFloatBox16.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox16.TabIndex = 0;
-            this.DCoTEFloatBox16.Text = "_.__";
-            // 
             // label50
             // 
             this.label50.AutoSize = true;
@@ -1562,18 +1320,6 @@ namespace DCoTEPatch
             this.label52.Size = new System.Drawing.Size(81, 13);
             this.label52.TabIndex = 16;
             this.label52.Text = "(Default is 21.0)";
-            // 
-            // DCoTEFloatBox20
-            // 
-            this.DCoTEFloatBox20.CodeOffset = 2387404;
-            this.DCoTEFloatBox20.DefaultValue = "21.0";
-            this.DCoTEFloatBox20.Location = new System.Drawing.Point(148, 36);
-            this.DCoTEFloatBox20.Mask = "##,#";
-            this.DCoTEFloatBox20.MaxValue = 99.9F;
-            this.DCoTEFloatBox20.Name = "DCoTEFloatBox20";
-            this.DCoTEFloatBox20.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox20.TabIndex = 1;
-            this.DCoTEFloatBox20.Text = "__._";
             // 
             // groupBox9
             // 
@@ -1608,18 +1354,6 @@ namespace DCoTEPatch
             this.label57.TabIndex = 12;
             this.label57.Text = "Poison Damage per Second";
             // 
-            // DCoTEFloatBox21
-            // 
-            this.DCoTEFloatBox21.CodeOffset = 2377146;
-            this.DCoTEFloatBox21.DefaultValue = "0.05";
-            this.DCoTEFloatBox21.Location = new System.Drawing.Point(157, 13);
-            this.DCoTEFloatBox21.Mask = "#,##";
-            this.DCoTEFloatBox21.MaxValue = 9.99F;
-            this.DCoTEFloatBox21.Name = "DCoTEFloatBox21";
-            this.DCoTEFloatBox21.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox21.TabIndex = 0;
-            this.DCoTEFloatBox21.Text = "_.__";
-            // 
             // label58
             // 
             this.label58.AutoSize = true;
@@ -1637,18 +1371,6 @@ namespace DCoTEPatch
             this.label59.Size = new System.Drawing.Size(72, 13);
             this.label59.TabIndex = 16;
             this.label59.Text = "(Default is 15)";
-            // 
-            // DCoTEFloatBox22
-            // 
-            this.DCoTEFloatBox22.CodeOffset = 2377340;
-            this.DCoTEFloatBox22.DefaultValue = "15";
-            this.DCoTEFloatBox22.Location = new System.Drawing.Point(157, 36);
-            this.DCoTEFloatBox22.Mask = "##";
-            this.DCoTEFloatBox22.MaxValue = 99F;
-            this.DCoTEFloatBox22.Name = "DCoTEFloatBox22";
-            this.DCoTEFloatBox22.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox22.TabIndex = 1;
-            this.DCoTEFloatBox22.Text = "__";
             // 
             // groupBox7
             // 
@@ -1686,18 +1408,6 @@ namespace DCoTEPatch
             this.label49.TabIndex = 12;
             this.label49.Text = "Fatal Distance";
             // 
-            // DCoTEFloatBox17
-            // 
-            this.DCoTEFloatBox17.CodeOffset = 2383548;
-            this.DCoTEFloatBox17.DefaultValue = "995.0";
-            this.DCoTEFloatBox17.Location = new System.Drawing.Point(106, 13);
-            this.DCoTEFloatBox17.Mask = "###,#";
-            this.DCoTEFloatBox17.MaxValue = 999.9F;
-            this.DCoTEFloatBox17.Name = "DCoTEFloatBox17";
-            this.DCoTEFloatBox17.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox17.TabIndex = 0;
-            this.DCoTEFloatBox17.Text = "___._";
-            // 
             // label51
             // 
             this.label51.AutoSize = true;
@@ -1724,30 +1434,6 @@ namespace DCoTEPatch
             this.label54.Size = new System.Drawing.Size(87, 13);
             this.label54.TabIndex = 20;
             this.label54.Text = "(Default is 395.0)";
-            // 
-            // DCoTEFloatBox18
-            // 
-            this.DCoTEFloatBox18.CodeOffset = 2383602;
-            this.DCoTEFloatBox18.DefaultValue = "595.0";
-            this.DCoTEFloatBox18.Location = new System.Drawing.Point(106, 36);
-            this.DCoTEFloatBox18.Mask = "###,#";
-            this.DCoTEFloatBox18.MaxValue = 999.9F;
-            this.DCoTEFloatBox18.Name = "DCoTEFloatBox18";
-            this.DCoTEFloatBox18.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox18.TabIndex = 1;
-            this.DCoTEFloatBox18.Text = "___._";
-            // 
-            // DCoTEFloatBox19
-            // 
-            this.DCoTEFloatBox19.CodeOffset = 2383662;
-            this.DCoTEFloatBox19.DefaultValue = "395.0";
-            this.DCoTEFloatBox19.Location = new System.Drawing.Point(106, 59);
-            this.DCoTEFloatBox19.Mask = "###,#";
-            this.DCoTEFloatBox19.MaxValue = 999.9F;
-            this.DCoTEFloatBox19.Name = "DCoTEFloatBox19";
-            this.DCoTEFloatBox19.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox19.TabIndex = 2;
-            this.DCoTEFloatBox19.Text = "___._";
             // 
             // label55
             // 
@@ -1800,18 +1486,6 @@ namespace DCoTEPatch
             this.label21.TabIndex = 24;
             this.label21.Text = "Climbing Speed";
             // 
-            // DCoTEFloatBox5
-            // 
-            this.DCoTEFloatBox5.CodeOffset = 2374245;
-            this.DCoTEFloatBox5.DefaultValue = "25.0";
-            this.DCoTEFloatBox5.Location = new System.Drawing.Point(106, 112);
-            this.DCoTEFloatBox5.Mask = "##,#";
-            this.DCoTEFloatBox5.MaxValue = 99.9F;
-            this.DCoTEFloatBox5.Name = "DCoTEFloatBox5";
-            this.DCoTEFloatBox5.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox5.TabIndex = 4;
-            this.DCoTEFloatBox5.Text = "__._";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -1829,18 +1503,6 @@ namespace DCoTEPatch
             this.label13.Size = new System.Drawing.Size(67, 13);
             this.label13.TabIndex = 12;
             this.label13.Text = "Crawl Speed";
-            // 
-            // mebCrawlSpeed
-            // 
-            this.mebCrawlSpeed.CodeOffset = 2373900;
-            this.mebCrawlSpeed.DefaultValue = "180.0";
-            this.mebCrawlSpeed.Location = new System.Drawing.Point(106, 19);
-            this.mebCrawlSpeed.Mask = "###,#";
-            this.mebCrawlSpeed.MaxValue = 999.9F;
-            this.mebCrawlSpeed.Name = "mebCrawlSpeed";
-            this.mebCrawlSpeed.Size = new System.Drawing.Size(38, 20);
-            this.mebCrawlSpeed.TabIndex = 0;
-            this.mebCrawlSpeed.Text = "___._";
             // 
             // label14
             // 
@@ -1887,30 +1549,6 @@ namespace DCoTEPatch
             this.label18.TabIndex = 20;
             this.label18.Text = "(Default is 560.0)";
             // 
-            // mebWalkSpeed
-            // 
-            this.mebWalkSpeed.CodeOffset = 2373967;
-            this.mebWalkSpeed.DefaultValue = "380.0";
-            this.mebWalkSpeed.Location = new System.Drawing.Point(106, 42);
-            this.mebWalkSpeed.Mask = "###,#";
-            this.mebWalkSpeed.MaxValue = 999.9F;
-            this.mebWalkSpeed.Name = "mebWalkSpeed";
-            this.mebWalkSpeed.Size = new System.Drawing.Size(38, 20);
-            this.mebWalkSpeed.TabIndex = 1;
-            this.mebWalkSpeed.Text = "___._";
-            // 
-            // DCoTEFloatBox3
-            // 
-            this.DCoTEFloatBox3.CodeOffset = 2374032;
-            this.DCoTEFloatBox3.DefaultValue = "560.0";
-            this.DCoTEFloatBox3.Location = new System.Drawing.Point(106, 65);
-            this.DCoTEFloatBox3.Mask = "###,#";
-            this.DCoTEFloatBox3.MaxValue = 999.9F;
-            this.DCoTEFloatBox3.Name = "DCoTEFloatBox3";
-            this.DCoTEFloatBox3.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox3.TabIndex = 2;
-            this.DCoTEFloatBox3.Text = "___._";
-            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -1920,18 +1558,6 @@ namespace DCoTEPatch
             this.label19.TabIndex = 18;
             this.label19.Text = "Running Speed";
             // 
-            // DCoTEFloatBox4
-            // 
-            this.DCoTEFloatBox4.CodeOffset = 2374098;
-            this.DCoTEFloatBox4.DefaultValue = "590.0";
-            this.DCoTEFloatBox4.Location = new System.Drawing.Point(106, 88);
-            this.DCoTEFloatBox4.Mask = "###,#";
-            this.DCoTEFloatBox4.MaxValue = 999.9F;
-            this.DCoTEFloatBox4.Name = "DCoTEFloatBox4";
-            this.DCoTEFloatBox4.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox4.TabIndex = 3;
-            this.DCoTEFloatBox4.Text = "___._";
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.groupBoxInfinite);
@@ -1940,7 +1566,7 @@ namespace DCoTEPatch
             this.tabPage3.Controls.Add(this.groupBoxMelee);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(568, 462);
+            this.tabPage3.Size = new System.Drawing.Size(568, 502);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Weapons and Damage";
             // 
@@ -1953,16 +1579,6 @@ namespace DCoTEPatch
             this.groupBoxInfinite.TabIndex = 11;
             this.groupBoxInfinite.TabStop = false;
             this.groupBoxInfinite.Text = "Extras discovered by Fraya";
-            // 
-            // checkBoxInfiniteAmmo
-            // 
-            this.checkBoxInfiniteAmmo.CodeOffset = 0;
-            this.checkBoxInfiniteAmmo.DefaultValue = false;
-            this.checkBoxInfiniteAmmo.Location = new System.Drawing.Point(14, 23);
-            this.checkBoxInfiniteAmmo.Name = "checkBoxInfiniteAmmo";
-            this.checkBoxInfiniteAmmo.Size = new System.Drawing.Size(211, 17);
-            this.checkBoxInfiniteAmmo.TabIndex = 10;
-            this.checkBoxInfiniteAmmo.Text = "Infinite Ammo";
             // 
             // groupBoxWeapons
             // 
@@ -2051,18 +1667,6 @@ namespace DCoTEPatch
             this.label95.TabIndex = 82;
             this.label95.Text = "(Default is 1)";
             // 
-            // dCoTEFloatBox40
-            // 
-            this.dCoTEFloatBox40.CodeOffset = 2398961;
-            this.dCoTEFloatBox40.DefaultValue = "1";
-            this.dCoTEFloatBox40.Location = new System.Drawing.Point(132, 419);
-            this.dCoTEFloatBox40.Mask = "#";
-            this.dCoTEFloatBox40.MaxValue = 9F;
-            this.dCoTEFloatBox40.Name = "dCoTEFloatBox40";
-            this.dCoTEFloatBox40.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox40.TabIndex = 80;
-            this.dCoTEFloatBox40.Text = "_";
-            // 
             // label96
             // 
             this.label96.AutoSize = true;
@@ -2080,18 +1684,6 @@ namespace DCoTEPatch
             this.label97.Size = new System.Drawing.Size(75, 13);
             this.label97.TabIndex = 79;
             this.label97.Text = "(Default is 8.0)";
-            // 
-            // dCoTEFloatBox41
-            // 
-            this.dCoTEFloatBox41.CodeOffset = 2398928;
-            this.dCoTEFloatBox41.DefaultValue = "8.0";
-            this.dCoTEFloatBox41.Location = new System.Drawing.Point(132, 398);
-            this.dCoTEFloatBox41.Mask = "#,#";
-            this.dCoTEFloatBox41.MaxValue = 9.9F;
-            this.dCoTEFloatBox41.Name = "dCoTEFloatBox41";
-            this.dCoTEFloatBox41.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox41.TabIndex = 77;
-            this.dCoTEFloatBox41.Text = "_._";
             // 
             // label98
             // 
@@ -2111,18 +1703,6 @@ namespace DCoTEPatch
             this.label99.TabIndex = 76;
             this.label99.Text = "(Default is 50)";
             // 
-            // dCoTEFloatBox42
-            // 
-            this.dCoTEFloatBox42.CodeOffset = 2398906;
-            this.dCoTEFloatBox42.DefaultValue = "50";
-            this.dCoTEFloatBox42.Location = new System.Drawing.Point(132, 377);
-            this.dCoTEFloatBox42.Mask = "##";
-            this.dCoTEFloatBox42.MaxValue = 99F;
-            this.dCoTEFloatBox42.Name = "dCoTEFloatBox42";
-            this.dCoTEFloatBox42.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox42.TabIndex = 74;
-            this.dCoTEFloatBox42.Text = "__";
-            // 
             // label88
             // 
             this.label88.AutoSize = true;
@@ -2140,18 +1720,6 @@ namespace DCoTEPatch
             this.label89.Size = new System.Drawing.Size(66, 13);
             this.label89.TabIndex = 73;
             this.label89.Text = "(Default is 1)";
-            // 
-            // dCoTEFloatBox37
-            // 
-            this.dCoTEFloatBox37.CodeOffset = 2398555;
-            this.dCoTEFloatBox37.DefaultValue = "1";
-            this.dCoTEFloatBox37.Location = new System.Drawing.Point(132, 334);
-            this.dCoTEFloatBox37.Mask = "#";
-            this.dCoTEFloatBox37.MaxValue = 9F;
-            this.dCoTEFloatBox37.Name = "dCoTEFloatBox37";
-            this.dCoTEFloatBox37.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox37.TabIndex = 71;
-            this.dCoTEFloatBox37.Text = "_";
             // 
             // label90
             // 
@@ -2171,18 +1739,6 @@ namespace DCoTEPatch
             this.label91.TabIndex = 70;
             this.label91.Text = "(Default is 80.0)";
             // 
-            // dCoTEFloatBox38
-            // 
-            this.dCoTEFloatBox38.CodeOffset = 2398521;
-            this.dCoTEFloatBox38.DefaultValue = "80.0";
-            this.dCoTEFloatBox38.Location = new System.Drawing.Point(132, 313);
-            this.dCoTEFloatBox38.Mask = "##,#";
-            this.dCoTEFloatBox38.MaxValue = 99.9F;
-            this.dCoTEFloatBox38.Name = "dCoTEFloatBox38";
-            this.dCoTEFloatBox38.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox38.TabIndex = 68;
-            this.dCoTEFloatBox38.Text = "__._";
-            // 
             // label92
             // 
             this.label92.AutoSize = true;
@@ -2200,18 +1756,6 @@ namespace DCoTEPatch
             this.label93.Size = new System.Drawing.Size(66, 13);
             this.label93.TabIndex = 67;
             this.label93.Text = "(Default is 5)";
-            // 
-            // dCoTEFloatBox39
-            // 
-            this.dCoTEFloatBox39.CodeOffset = 2398500;
-            this.dCoTEFloatBox39.DefaultValue = "5";
-            this.dCoTEFloatBox39.Location = new System.Drawing.Point(132, 292);
-            this.dCoTEFloatBox39.Mask = "#";
-            this.dCoTEFloatBox39.MaxValue = 9F;
-            this.dCoTEFloatBox39.Name = "dCoTEFloatBox39";
-            this.dCoTEFloatBox39.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox39.TabIndex = 65;
-            this.dCoTEFloatBox39.Text = "_";
             // 
             // label82
             // 
@@ -2231,18 +1775,6 @@ namespace DCoTEPatch
             this.label83.TabIndex = 64;
             this.label83.Text = "(Default is 8)";
             // 
-            // dCoTEFloatBox34
-            // 
-            this.dCoTEFloatBox34.CodeOffset = 2398149;
-            this.dCoTEFloatBox34.DefaultValue = "8";
-            this.dCoTEFloatBox34.Location = new System.Drawing.Point(132, 250);
-            this.dCoTEFloatBox34.Mask = "#";
-            this.dCoTEFloatBox34.MaxValue = 9F;
-            this.dCoTEFloatBox34.Name = "dCoTEFloatBox34";
-            this.dCoTEFloatBox34.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox34.TabIndex = 62;
-            this.dCoTEFloatBox34.Text = "_";
-            // 
             // label84
             // 
             this.label84.AutoSize = true;
@@ -2260,18 +1792,6 @@ namespace DCoTEPatch
             this.label85.Size = new System.Drawing.Size(81, 13);
             this.label85.TabIndex = 61;
             this.label85.Text = "(Default is 20.0)";
-            // 
-            // dCoTEFloatBox35
-            // 
-            this.dCoTEFloatBox35.CodeOffset = 2398115;
-            this.dCoTEFloatBox35.DefaultValue = "20.0";
-            this.dCoTEFloatBox35.Location = new System.Drawing.Point(132, 229);
-            this.dCoTEFloatBox35.Mask = "##,#";
-            this.dCoTEFloatBox35.MaxValue = 99.9F;
-            this.dCoTEFloatBox35.Name = "dCoTEFloatBox35";
-            this.dCoTEFloatBox35.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox35.TabIndex = 59;
-            this.dCoTEFloatBox35.Text = "__._";
             // 
             // label86
             // 
@@ -2291,18 +1811,6 @@ namespace DCoTEPatch
             this.label87.TabIndex = 58;
             this.label87.Text = "(Default is 2)";
             // 
-            // dCoTEFloatBox36
-            // 
-            this.dCoTEFloatBox36.CodeOffset = 2398094;
-            this.dCoTEFloatBox36.DefaultValue = "2";
-            this.dCoTEFloatBox36.Location = new System.Drawing.Point(132, 207);
-            this.dCoTEFloatBox36.Mask = "#";
-            this.dCoTEFloatBox36.MaxValue = 9F;
-            this.dCoTEFloatBox36.Name = "dCoTEFloatBox36";
-            this.dCoTEFloatBox36.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox36.TabIndex = 56;
-            this.dCoTEFloatBox36.Text = "_";
-            // 
             // label76
             // 
             this.label76.AutoSize = true;
@@ -2320,18 +1828,6 @@ namespace DCoTEPatch
             this.label77.Size = new System.Drawing.Size(66, 13);
             this.label77.TabIndex = 55;
             this.label77.Text = "(Default is 1)";
-            // 
-            // dCoTEFloatBox31
-            // 
-            this.dCoTEFloatBox31.CodeOffset = 2397739;
-            this.dCoTEFloatBox31.DefaultValue = "1";
-            this.dCoTEFloatBox31.Location = new System.Drawing.Point(132, 78);
-            this.dCoTEFloatBox31.Mask = "#";
-            this.dCoTEFloatBox31.MaxValue = 9F;
-            this.dCoTEFloatBox31.Name = "dCoTEFloatBox31";
-            this.dCoTEFloatBox31.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox31.TabIndex = 53;
-            this.dCoTEFloatBox31.Text = "_";
             // 
             // label78
             // 
@@ -2351,18 +1847,6 @@ namespace DCoTEPatch
             this.label79.TabIndex = 52;
             this.label79.Text = "(Default is 20.0)";
             // 
-            // dCoTEFloatBox32
-            // 
-            this.dCoTEFloatBox32.CodeOffset = 2397705;
-            this.dCoTEFloatBox32.DefaultValue = "20.0";
-            this.dCoTEFloatBox32.Location = new System.Drawing.Point(132, 57);
-            this.dCoTEFloatBox32.Mask = "##,#";
-            this.dCoTEFloatBox32.MaxValue = 99.9F;
-            this.dCoTEFloatBox32.Name = "dCoTEFloatBox32";
-            this.dCoTEFloatBox32.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox32.TabIndex = 50;
-            this.dCoTEFloatBox32.Text = "__._";
-            // 
             // label80
             // 
             this.label80.AutoSize = true;
@@ -2380,18 +1864,6 @@ namespace DCoTEPatch
             this.label81.Size = new System.Drawing.Size(66, 13);
             this.label81.TabIndex = 49;
             this.label81.Text = "(Default is 9)";
-            // 
-            // dCoTEFloatBox33
-            // 
-            this.dCoTEFloatBox33.CodeOffset = 2397684;
-            this.dCoTEFloatBox33.DefaultValue = "9";
-            this.dCoTEFloatBox33.Location = new System.Drawing.Point(132, 36);
-            this.dCoTEFloatBox33.Mask = "#";
-            this.dCoTEFloatBox33.MaxValue = 9F;
-            this.dCoTEFloatBox33.Name = "dCoTEFloatBox33";
-            this.dCoTEFloatBox33.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox33.TabIndex = 47;
-            this.dCoTEFloatBox33.Text = "_";
             // 
             // label74
             // 
@@ -2411,18 +1883,6 @@ namespace DCoTEPatch
             this.label75.TabIndex = 46;
             this.label75.Text = "(Default is 1)";
             // 
-            // dCoTEFloatBox30
-            // 
-            this.dCoTEFloatBox30.CodeOffset = 2397328;
-            this.dCoTEFloatBox30.DefaultValue = "1";
-            this.dCoTEFloatBox30.Location = new System.Drawing.Point(132, 164);
-            this.dCoTEFloatBox30.Mask = "#";
-            this.dCoTEFloatBox30.MaxValue = 9F;
-            this.dCoTEFloatBox30.Name = "dCoTEFloatBox30";
-            this.dCoTEFloatBox30.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox30.TabIndex = 44;
-            this.dCoTEFloatBox30.Text = "_";
-            // 
             // label72
             // 
             this.label72.AutoSize = true;
@@ -2440,18 +1900,6 @@ namespace DCoTEPatch
             this.label73.Size = new System.Drawing.Size(81, 13);
             this.label73.TabIndex = 43;
             this.label73.Text = "(Default is 32.0)";
-            // 
-            // dCoTEFloatBox29
-            // 
-            this.dCoTEFloatBox29.CodeOffset = 2397294;
-            this.dCoTEFloatBox29.DefaultValue = "32.0";
-            this.dCoTEFloatBox29.Location = new System.Drawing.Point(132, 142);
-            this.dCoTEFloatBox29.Mask = "##,#";
-            this.dCoTEFloatBox29.MaxValue = 99.9F;
-            this.dCoTEFloatBox29.Name = "dCoTEFloatBox29";
-            this.dCoTEFloatBox29.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox29.TabIndex = 41;
-            this.dCoTEFloatBox29.Text = "__._";
             // 
             // label70
             // 
@@ -2471,18 +1919,6 @@ namespace DCoTEPatch
             this.label71.TabIndex = 40;
             this.label71.Text = "(Default is 6)";
             // 
-            // dCoTEFloatBox28
-            // 
-            this.dCoTEFloatBox28.CodeOffset = 2397273;
-            this.dCoTEFloatBox28.DefaultValue = "6";
-            this.dCoTEFloatBox28.Location = new System.Drawing.Point(132, 121);
-            this.dCoTEFloatBox28.Mask = "#";
-            this.dCoTEFloatBox28.MaxValue = 9F;
-            this.dCoTEFloatBox28.Name = "dCoTEFloatBox28";
-            this.dCoTEFloatBox28.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox28.TabIndex = 38;
-            this.dCoTEFloatBox28.Text = "_";
-            // 
             // label68
             // 
             this.label68.AutoSize = true;
@@ -2500,18 +1936,6 @@ namespace DCoTEPatch
             this.label69.Size = new System.Drawing.Size(78, 13);
             this.label69.TabIndex = 37;
             this.label69.Text = "(Default is 200)";
-            // 
-            // dCoTEFloatBox27
-            // 
-            this.dCoTEFloatBox27.CodeOffset = 2519082;
-            this.dCoTEFloatBox27.DefaultValue = "200";
-            this.dCoTEFloatBox27.Location = new System.Drawing.Point(132, 355);
-            this.dCoTEFloatBox27.Mask = "###";
-            this.dCoTEFloatBox27.MaxValue = 999F;
-            this.dCoTEFloatBox27.Name = "dCoTEFloatBox27";
-            this.dCoTEFloatBox27.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox27.TabIndex = 35;
-            this.dCoTEFloatBox27.Text = "___";
             // 
             // label66
             // 
@@ -2531,18 +1955,6 @@ namespace DCoTEPatch
             this.label67.TabIndex = 34;
             this.label67.Text = "(Default is 30)";
             // 
-            // dCoTEFloatBox26
-            // 
-            this.dCoTEFloatBox26.CodeOffset = 2518864;
-            this.dCoTEFloatBox26.DefaultValue = "30";
-            this.dCoTEFloatBox26.Location = new System.Drawing.Point(132, 271);
-            this.dCoTEFloatBox26.Mask = "##";
-            this.dCoTEFloatBox26.MaxValue = 99F;
-            this.dCoTEFloatBox26.Name = "dCoTEFloatBox26";
-            this.dCoTEFloatBox26.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox26.TabIndex = 32;
-            this.dCoTEFloatBox26.Text = "__";
-            // 
             // label64
             // 
             this.label64.AutoSize = true;
@@ -2560,18 +1972,6 @@ namespace DCoTEPatch
             this.label65.Size = new System.Drawing.Size(72, 13);
             this.label65.TabIndex = 31;
             this.label65.Text = "(Default is 30)";
-            // 
-            // dCoTEFloatBox25
-            // 
-            this.dCoTEFloatBox25.CodeOffset = 2518633;
-            this.dCoTEFloatBox25.DefaultValue = "30";
-            this.dCoTEFloatBox25.Location = new System.Drawing.Point(132, 186);
-            this.dCoTEFloatBox25.Mask = "##";
-            this.dCoTEFloatBox25.MaxValue = 99F;
-            this.dCoTEFloatBox25.Name = "dCoTEFloatBox25";
-            this.dCoTEFloatBox25.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox25.TabIndex = 29;
-            this.dCoTEFloatBox25.Text = "__";
             // 
             // label62
             // 
@@ -2591,18 +1991,6 @@ namespace DCoTEPatch
             this.label63.TabIndex = 28;
             this.label63.Text = "(Default is 50)";
             // 
-            // dCoTEFloatBox24
-            // 
-            this.dCoTEFloatBox24.CodeOffset = 2518408;
-            this.dCoTEFloatBox24.DefaultValue = "50";
-            this.dCoTEFloatBox24.Location = new System.Drawing.Point(132, 99);
-            this.dCoTEFloatBox24.Mask = "##";
-            this.dCoTEFloatBox24.MaxValue = 99F;
-            this.dCoTEFloatBox24.Name = "dCoTEFloatBox24";
-            this.dCoTEFloatBox24.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox24.TabIndex = 26;
-            this.dCoTEFloatBox24.Text = "__";
-            // 
             // label60
             // 
             this.label60.AutoSize = true;
@@ -2620,18 +2008,6 @@ namespace DCoTEPatch
             this.label61.Size = new System.Drawing.Size(72, 13);
             this.label61.TabIndex = 25;
             this.label61.Text = "(Default is 50)";
-            // 
-            // dCoTEFloatBox23
-            // 
-            this.dCoTEFloatBox23.CodeOffset = 2518189;
-            this.dCoTEFloatBox23.DefaultValue = "50";
-            this.dCoTEFloatBox23.Location = new System.Drawing.Point(132, 15);
-            this.dCoTEFloatBox23.Mask = "##";
-            this.dCoTEFloatBox23.MaxValue = 99F;
-            this.dCoTEFloatBox23.Name = "dCoTEFloatBox23";
-            this.dCoTEFloatBox23.Size = new System.Drawing.Size(38, 20);
-            this.dCoTEFloatBox23.TabIndex = 23;
-            this.dCoTEFloatBox23.Text = "__";
             // 
             // groupBoxDamage
             // 
@@ -2678,18 +2054,6 @@ namespace DCoTEPatch
             this.label33.TabIndex = 27;
             this.label33.Text = "Right Leg";
             // 
-            // DCoTEFloatBox9
-            // 
-            this.DCoTEFloatBox9.CodeOffset = 2400128;
-            this.DCoTEFloatBox9.DefaultValue = "0.4";
-            this.DCoTEFloatBox9.Location = new System.Drawing.Point(106, 130);
-            this.DCoTEFloatBox9.Mask = "#,#";
-            this.DCoTEFloatBox9.MaxValue = 9.9F;
-            this.DCoTEFloatBox9.Name = "DCoTEFloatBox9";
-            this.DCoTEFloatBox9.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox9.TabIndex = 5;
-            this.DCoTEFloatBox9.Text = "_._";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -2708,18 +2072,6 @@ namespace DCoTEPatch
             this.label23.TabIndex = 24;
             this.label23.Text = "Left Leg";
             // 
-            // DCoTEFloatBox1
-            // 
-            this.DCoTEFloatBox1.CodeOffset = 2400079;
-            this.DCoTEFloatBox1.DefaultValue = "0.4";
-            this.DCoTEFloatBox1.Location = new System.Drawing.Point(106, 106);
-            this.DCoTEFloatBox1.Mask = "#,#";
-            this.DCoTEFloatBox1.MaxValue = 9.9F;
-            this.DCoTEFloatBox1.Name = "DCoTEFloatBox1";
-            this.DCoTEFloatBox1.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox1.TabIndex = 4;
-            this.DCoTEFloatBox1.Text = "_._";
-            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -2737,18 +2089,6 @@ namespace DCoTEPatch
             this.label25.Size = new System.Drawing.Size(33, 13);
             this.label25.TabIndex = 12;
             this.label25.Text = "Head";
-            // 
-            // DCoTEFloatBox2
-            // 
-            this.DCoTEFloatBox2.CodeOffset = 2399893;
-            this.DCoTEFloatBox2.DefaultValue = "4.0";
-            this.DCoTEFloatBox2.Location = new System.Drawing.Point(106, 13);
-            this.DCoTEFloatBox2.Mask = "#,#";
-            this.DCoTEFloatBox2.MaxValue = 9.9F;
-            this.DCoTEFloatBox2.Name = "DCoTEFloatBox2";
-            this.DCoTEFloatBox2.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox2.TabIndex = 0;
-            this.DCoTEFloatBox2.Text = "_._";
             // 
             // label26
             // 
@@ -2795,30 +2135,6 @@ namespace DCoTEPatch
             this.label30.TabIndex = 20;
             this.label30.Text = "(Default is 0.6)";
             // 
-            // DCoTEFloatBox6
-            // 
-            this.DCoTEFloatBox6.CodeOffset = 2399936;
-            this.DCoTEFloatBox6.DefaultValue = "1.0";
-            this.DCoTEFloatBox6.Location = new System.Drawing.Point(106, 36);
-            this.DCoTEFloatBox6.Mask = "#,#";
-            this.DCoTEFloatBox6.MaxValue = 9.9F;
-            this.DCoTEFloatBox6.Name = "DCoTEFloatBox6";
-            this.DCoTEFloatBox6.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox6.TabIndex = 1;
-            this.DCoTEFloatBox6.Text = "_._";
-            // 
-            // DCoTEFloatBox7
-            // 
-            this.DCoTEFloatBox7.CodeOffset = 2399982;
-            this.DCoTEFloatBox7.DefaultValue = "0.6";
-            this.DCoTEFloatBox7.Location = new System.Drawing.Point(106, 59);
-            this.DCoTEFloatBox7.Mask = "#,#";
-            this.DCoTEFloatBox7.MaxValue = 9.9F;
-            this.DCoTEFloatBox7.Name = "DCoTEFloatBox7";
-            this.DCoTEFloatBox7.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox7.TabIndex = 2;
-            this.DCoTEFloatBox7.Text = "_._";
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -2827,18 +2143,6 @@ namespace DCoTEPatch
             this.label31.Size = new System.Drawing.Size(46, 13);
             this.label31.TabIndex = 18;
             this.label31.Text = "Left Arm";
-            // 
-            // DCoTEFloatBox8
-            // 
-            this.DCoTEFloatBox8.CodeOffset = 2400031;
-            this.DCoTEFloatBox8.DefaultValue = "0.6";
-            this.DCoTEFloatBox8.Location = new System.Drawing.Point(106, 82);
-            this.DCoTEFloatBox8.Mask = "#,#";
-            this.DCoTEFloatBox8.MaxValue = 9.9F;
-            this.DCoTEFloatBox8.Name = "DCoTEFloatBox8";
-            this.DCoTEFloatBox8.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox8.TabIndex = 3;
-            this.DCoTEFloatBox8.Text = "_._";
             // 
             // groupBoxMelee
             // 
@@ -2885,18 +2189,6 @@ namespace DCoTEPatch
             this.label35.TabIndex = 27;
             this.label35.Text = "Right Leg";
             // 
-            // DCoTEFloatBox10
-            // 
-            this.DCoTEFloatBox10.CodeOffset = 2400441;
-            this.DCoTEFloatBox10.DefaultValue = "0.5";
-            this.DCoTEFloatBox10.Location = new System.Drawing.Point(106, 130);
-            this.DCoTEFloatBox10.Mask = "#,#";
-            this.DCoTEFloatBox10.MaxValue = 9.9F;
-            this.DCoTEFloatBox10.Name = "DCoTEFloatBox10";
-            this.DCoTEFloatBox10.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox10.TabIndex = 5;
-            this.DCoTEFloatBox10.Text = "_._";
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -2915,18 +2207,6 @@ namespace DCoTEPatch
             this.label37.TabIndex = 24;
             this.label37.Text = "Left Leg";
             // 
-            // DCoTEFloatBox11
-            // 
-            this.DCoTEFloatBox11.CodeOffset = 2400414;
-            this.DCoTEFloatBox11.DefaultValue = "0.5";
-            this.DCoTEFloatBox11.Location = new System.Drawing.Point(106, 106);
-            this.DCoTEFloatBox11.Mask = "#,#";
-            this.DCoTEFloatBox11.MaxValue = 9.9F;
-            this.DCoTEFloatBox11.Name = "DCoTEFloatBox11";
-            this.DCoTEFloatBox11.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox11.TabIndex = 4;
-            this.DCoTEFloatBox11.Text = "_._";
-            // 
             // label38
             // 
             this.label38.AutoSize = true;
@@ -2944,18 +2224,6 @@ namespace DCoTEPatch
             this.label39.Size = new System.Drawing.Size(33, 13);
             this.label39.TabIndex = 12;
             this.label39.Text = "Head";
-            // 
-            // DCoTEFloatBox12
-            // 
-            this.DCoTEFloatBox12.CodeOffset = 2400315;
-            this.DCoTEFloatBox12.DefaultValue = "1.0";
-            this.DCoTEFloatBox12.Location = new System.Drawing.Point(106, 13);
-            this.DCoTEFloatBox12.Mask = "#,#";
-            this.DCoTEFloatBox12.MaxValue = 9.9F;
-            this.DCoTEFloatBox12.Name = "DCoTEFloatBox12";
-            this.DCoTEFloatBox12.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox12.TabIndex = 0;
-            this.DCoTEFloatBox12.Text = "_._";
             // 
             // label40
             // 
@@ -3002,30 +2270,6 @@ namespace DCoTEPatch
             this.label44.TabIndex = 20;
             this.label44.Text = "(Default is 0.9)";
             // 
-            // DCoTEFloatBox13
-            // 
-            this.DCoTEFloatBox13.CodeOffset = 2400336;
-            this.DCoTEFloatBox13.DefaultValue = "1.0";
-            this.DCoTEFloatBox13.Location = new System.Drawing.Point(106, 36);
-            this.DCoTEFloatBox13.Mask = "#,#";
-            this.DCoTEFloatBox13.MaxValue = 9.9F;
-            this.DCoTEFloatBox13.Name = "DCoTEFloatBox13";
-            this.DCoTEFloatBox13.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox13.TabIndex = 1;
-            this.DCoTEFloatBox13.Text = "_._";
-            // 
-            // DCoTEFloatBox14
-            // 
-            this.DCoTEFloatBox14.CodeOffset = 2400360;
-            this.DCoTEFloatBox14.DefaultValue = "0.9";
-            this.DCoTEFloatBox14.Location = new System.Drawing.Point(106, 59);
-            this.DCoTEFloatBox14.Mask = "#,#";
-            this.DCoTEFloatBox14.MaxValue = 9.9F;
-            this.DCoTEFloatBox14.Name = "DCoTEFloatBox14";
-            this.DCoTEFloatBox14.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox14.TabIndex = 2;
-            this.DCoTEFloatBox14.Text = "_._";
-            // 
             // label45
             // 
             this.label45.AutoSize = true;
@@ -3035,24 +2279,12 @@ namespace DCoTEPatch
             this.label45.TabIndex = 18;
             this.label45.Text = "Left Arm";
             // 
-            // DCoTEFloatBox15
-            // 
-            this.DCoTEFloatBox15.CodeOffset = 2400387;
-            this.DCoTEFloatBox15.DefaultValue = "0.9";
-            this.DCoTEFloatBox15.Location = new System.Drawing.Point(106, 82);
-            this.DCoTEFloatBox15.Mask = "#,#";
-            this.DCoTEFloatBox15.MaxValue = 9.9F;
-            this.DCoTEFloatBox15.Name = "DCoTEFloatBox15";
-            this.DCoTEFloatBox15.Size = new System.Drawing.Size(38, 20);
-            this.DCoTEFloatBox15.TabIndex = 3;
-            this.DCoTEFloatBox15.Text = "_._";
-            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.groupBoxAdvancedXML);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(568, 462);
+            this.tabPage4.Size = new System.Drawing.Size(568, 502);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Advanced XML Data";
             // 
@@ -3068,7 +2300,7 @@ namespace DCoTEPatch
             this.groupBoxAdvancedXML.Controls.Add(this.dgSettings);
             this.groupBoxAdvancedXML.Location = new System.Drawing.Point(6, 3);
             this.groupBoxAdvancedXML.Name = "groupBoxAdvancedXML";
-            this.groupBoxAdvancedXML.Size = new System.Drawing.Size(556, 456);
+            this.groupBoxAdvancedXML.Size = new System.Drawing.Size(556, 496);
             this.groupBoxAdvancedXML.TabIndex = 1;
             this.groupBoxAdvancedXML.TabStop = false;
             this.groupBoxAdvancedXML.Text = "XML";
@@ -3100,7 +2332,7 @@ namespace DCoTEPatch
             // 
             this.pbXML.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbXML.Location = new System.Drawing.Point(6, 440);
+            this.pbXML.Location = new System.Drawing.Point(6, 480);
             this.pbXML.Maximum = 25;
             this.pbXML.Name = "pbXML";
             this.pbXML.Size = new System.Drawing.Size(543, 10);
@@ -3139,10 +2371,791 @@ namespace DCoTEPatch
             this.textBox5.TabIndex = 18;
             this.textBox5.Text = resources.GetString("textBox5.Text");
             // 
+            // checkBoxFilmEffects
+            // 
+            this.checkBoxFilmEffects.CodeOffset = 0;
+            this.checkBoxFilmEffects.DefaultValue = false;
+            this.checkBoxFilmEffects.Location = new System.Drawing.Point(21, 42);
+            this.checkBoxFilmEffects.Name = "checkBoxFilmEffects";
+            this.checkBoxFilmEffects.Size = new System.Drawing.Size(292, 17);
+            this.checkBoxFilmEffects.TabIndex = 9;
+            this.checkBoxFilmEffects.Text = "Disable Filmgrain/Letterbox on cutscenes";
+            // 
+            // checkBoxExtendedMovie
+            // 
+            this.checkBoxExtendedMovie.CodeOffset = 0;
+            this.checkBoxExtendedMovie.DefaultValue = false;
+            this.checkBoxExtendedMovie.Location = new System.Drawing.Point(21, 19);
+            this.checkBoxExtendedMovie.Name = "checkBoxExtendedMovie";
+            this.checkBoxExtendedMovie.Size = new System.Drawing.Size(292, 17);
+            this.checkBoxExtendedMovie.TabIndex = 8;
+            this.checkBoxExtendedMovie.Text = "Always Show Extended End Movie";
+            // 
+            // checkBoxAllowLegalSkip
+            // 
+            this.checkBoxAllowLegalSkip.CodeOffset = 0;
+            this.checkBoxAllowLegalSkip.DefaultValue = false;
+            this.checkBoxAllowLegalSkip.Location = new System.Drawing.Point(21, 19);
+            this.checkBoxAllowLegalSkip.Name = "checkBoxAllowLegalSkip";
+            this.checkBoxAllowLegalSkip.Size = new System.Drawing.Size(152, 17);
+            this.checkBoxAllowLegalSkip.TabIndex = 9;
+            this.checkBoxAllowLegalSkip.Text = "Allow skip of legal video";
+            // 
+            // checkBoxSkipVideos
+            // 
+            this.checkBoxSkipVideos.CodeOffset = 2382035;
+            this.checkBoxSkipVideos.DefaultValue = false;
+            this.checkBoxSkipVideos.Location = new System.Drawing.Point(220, 19);
+            this.checkBoxSkipVideos.Name = "checkBoxSkipVideos";
+            this.checkBoxSkipVideos.Size = new System.Drawing.Size(192, 17);
+            this.checkBoxSkipVideos.TabIndex = 1;
+            this.checkBoxSkipVideos.Text = "Auto Skip All Startup Videos";
+            // 
+            // checkBoxReachArm
+            // 
+            this.checkBoxReachArm.CodeOffset = 2375501;
+            this.checkBoxReachArm.DefaultValue = false;
+            this.checkBoxReachArm.Location = new System.Drawing.Point(21, 42);
+            this.checkBoxReachArm.Name = "checkBoxReachArm";
+            this.checkBoxReachArm.Size = new System.Drawing.Size(229, 17);
+            this.checkBoxReachArm.TabIndex = 3;
+            this.checkBoxReachArm.Text = "Enable Reach Arm (Dropped feature)";
+            // 
+            // checkBoxGodMode
+            // 
+            this.checkBoxGodMode.CodeOffset = 2375208;
+            this.checkBoxGodMode.DefaultValue = false;
+            this.checkBoxGodMode.Location = new System.Drawing.Point(21, 156);
+            this.checkBoxGodMode.Name = "checkBoxGodMode";
+            this.checkBoxGodMode.Size = new System.Drawing.Size(119, 17);
+            this.checkBoxGodMode.TabIndex = 6;
+            this.checkBoxGodMode.Text = "God Mode (yukk!)";
+            // 
+            // checkBoxDebugMode
+            // 
+            this.checkBoxDebugMode.CodeOffset = 2369703;
+            this.checkBoxDebugMode.DefaultValue = false;
+            this.checkBoxDebugMode.Location = new System.Drawing.Point(21, 19);
+            this.checkBoxDebugMode.Name = "checkBoxDebugMode";
+            this.checkBoxDebugMode.Size = new System.Drawing.Size(391, 17);
+            this.checkBoxDebugMode.TabIndex = 0;
+            this.checkBoxDebugMode.Text = "Enable Debug Mode (F1 to activate then w,x && ENTER to navigate)";
+            // 
+            // checkBoxFlyMode
+            // 
+            this.checkBoxFlyMode.CodeOffset = 2380692;
+            this.checkBoxFlyMode.DefaultValue = false;
+            this.checkBoxFlyMode.Location = new System.Drawing.Point(21, 134);
+            this.checkBoxFlyMode.Name = "checkBoxFlyMode";
+            this.checkBoxFlyMode.Size = new System.Drawing.Size(510, 17);
+            this.checkBoxFlyMode.TabIndex = 5;
+            this.checkBoxFlyMode.Text = "Start In Fly Mode (The Debug Mode menu allows fly mode to be toggled on/off at wi" +
+    "ll)";
+            // 
+            // checkBoxPickStartMap
+            // 
+            this.checkBoxPickStartMap.CodeOffset = 0;
+            this.checkBoxPickStartMap.DefaultValue = false;
+            this.checkBoxPickStartMap.Location = new System.Drawing.Point(21, 65);
+            this.checkBoxPickStartMap.Name = "checkBoxPickStartMap";
+            this.checkBoxPickStartMap.Size = new System.Drawing.Size(329, 17);
+            this.checkBoxPickStartMap.TabIndex = 4;
+            this.checkBoxPickStartMap.Text = "Allow choice of start map when starting a new game";
+            // 
+            // checkBoxUnlockAllContent
+            // 
+            this.checkBoxUnlockAllContent.CodeOffset = 0;
+            this.checkBoxUnlockAllContent.DefaultValue = false;
+            this.checkBoxUnlockAllContent.Location = new System.Drawing.Point(21, 88);
+            this.checkBoxUnlockAllContent.Name = "checkBoxUnlockAllContent";
+            this.checkBoxUnlockAllContent.Size = new System.Drawing.Size(391, 17);
+            this.checkBoxUnlockAllContent.TabIndex = 7;
+            this.checkBoxUnlockAllContent.Text = "Unlock All Bonus Content (Requires Debug Mode to also be enabled)";
+            // 
+            // checkBoxReleaseMode
+            // 
+            this.checkBoxReleaseMode.CodeOffset = 2370476;
+            this.checkBoxReleaseMode.DefaultValue = true;
+            this.checkBoxReleaseMode.Location = new System.Drawing.Point(21, 42);
+            this.checkBoxReleaseMode.Name = "checkBoxReleaseMode";
+            this.checkBoxReleaseMode.Size = new System.Drawing.Size(442, 17);
+            this.checkBoxReleaseMode.TabIndex = 2;
+            this.checkBoxReleaseMode.Text = "Release Mode (Untick this to allow Dev Continue when you die)";
+            // 
+            // mebFOV
+            // 
+            this.mebFOV.CodeOffset = 2374839;
+            this.mebFOV.DefaultValue = "55.0";
+            this.mebFOV.Location = new System.Drawing.Point(156, 13);
+            this.mebFOV.Mask = "##,#";
+            this.mebFOV.MaxValue = 99.9F;
+            this.mebFOV.Name = "mebFOV";
+            this.mebFOV.Size = new System.Drawing.Size(38, 20);
+            this.mebFOV.TabIndex = 0;
+            this.mebFOV.Text = "__._";
+            // 
+            // mebFOVSneak
+            // 
+            this.mebFOVSneak.CodeOffset = 2374887;
+            this.mebFOVSneak.DefaultValue = "68.0";
+            this.mebFOVSneak.Location = new System.Drawing.Point(156, 35);
+            this.mebFOVSneak.Mask = "##,#";
+            this.mebFOVSneak.MaxValue = 99.9F;
+            this.mebFOVSneak.Name = "mebFOVSneak";
+            this.mebFOVSneak.Size = new System.Drawing.Size(38, 20);
+            this.mebFOVSneak.TabIndex = 1;
+            this.mebFOVSneak.Text = "__._";
+            // 
+            // dCoTEFloatBox47
+            // 
+            this.dCoTEFloatBox47.CodeOffset = 2377769;
+            this.dCoTEFloatBox47.DefaultValue = "2.0";
+            this.dCoTEFloatBox47.Location = new System.Drawing.Point(157, 199);
+            this.dCoTEFloatBox47.Mask = "#,#";
+            this.dCoTEFloatBox47.MaxValue = 9.9F;
+            this.dCoTEFloatBox47.Name = "dCoTEFloatBox47";
+            this.dCoTEFloatBox47.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox47.TabIndex = 35;
+            this.dCoTEFloatBox47.Text = "_,_";
+            // 
+            // dCoTEFloatBox46
+            // 
+            this.dCoTEFloatBox46.CodeOffset = 2377708;
+            this.dCoTEFloatBox46.DefaultValue = "2.0";
+            this.dCoTEFloatBox46.Location = new System.Drawing.Point(157, 177);
+            this.dCoTEFloatBox46.Mask = "#,#";
+            this.dCoTEFloatBox46.MaxValue = 9.9F;
+            this.dCoTEFloatBox46.Name = "dCoTEFloatBox46";
+            this.dCoTEFloatBox46.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox46.TabIndex = 32;
+            this.dCoTEFloatBox46.Text = "_,_";
+            // 
+            // dCoTEFloatBox45
+            // 
+            this.dCoTEFloatBox45.CodeOffset = 2377648;
+            this.dCoTEFloatBox45.DefaultValue = "2.0";
+            this.dCoTEFloatBox45.Location = new System.Drawing.Point(157, 154);
+            this.dCoTEFloatBox45.Mask = "#,#";
+            this.dCoTEFloatBox45.MaxValue = 9.9F;
+            this.dCoTEFloatBox45.Name = "dCoTEFloatBox45";
+            this.dCoTEFloatBox45.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox45.TabIndex = 29;
+            this.dCoTEFloatBox45.Text = "_,_";
+            // 
+            // dCoTEFloatBox44
+            // 
+            this.dCoTEFloatBox44.CodeOffset = 2377590;
+            this.dCoTEFloatBox44.DefaultValue = "2.0";
+            this.dCoTEFloatBox44.Location = new System.Drawing.Point(157, 130);
+            this.dCoTEFloatBox44.Mask = "#,#";
+            this.dCoTEFloatBox44.MaxValue = 9.9F;
+            this.dCoTEFloatBox44.Name = "dCoTEFloatBox44";
+            this.dCoTEFloatBox44.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox44.TabIndex = 26;
+            this.dCoTEFloatBox44.Text = "_,_";
+            // 
+            // dCoTEFloatBox43
+            // 
+            this.dCoTEFloatBox43.CodeOffset = 2377531;
+            this.dCoTEFloatBox43.DefaultValue = "2.0";
+            this.dCoTEFloatBox43.Location = new System.Drawing.Point(157, 106);
+            this.dCoTEFloatBox43.Mask = "#,#";
+            this.dCoTEFloatBox43.MaxValue = 9.9F;
+            this.dCoTEFloatBox43.Name = "dCoTEFloatBox43";
+            this.dCoTEFloatBox43.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox43.TabIndex = 23;
+            this.dCoTEFloatBox43.Text = "_,_";
+            // 
+            // mebMorphine
+            // 
+            this.mebMorphine.CodeOffset = 2377000;
+            this.mebMorphine.DefaultValue = "20.0";
+            this.mebMorphine.Location = new System.Drawing.Point(157, 13);
+            this.mebMorphine.Mask = "##,#";
+            this.mebMorphine.MaxValue = 99.9F;
+            this.mebMorphine.Name = "mebMorphine";
+            this.mebMorphine.Size = new System.Drawing.Size(38, 20);
+            this.mebMorphine.TabIndex = 0;
+            this.mebMorphine.Text = "__._";
+            // 
+            // mebBandages
+            // 
+            this.mebBandages.CodeOffset = 2377850;
+            this.mebBandages.DefaultValue = "10";
+            this.mebBandages.Location = new System.Drawing.Point(157, 36);
+            this.mebBandages.Mask = "##";
+            this.mebBandages.MaxValue = 99F;
+            this.mebBandages.Name = "mebBandages";
+            this.mebBandages.Size = new System.Drawing.Size(38, 20);
+            this.mebBandages.TabIndex = 1;
+            this.mebBandages.Text = "__";
+            // 
+            // mebSplints
+            // 
+            this.mebSplints.CodeOffset = 2377890;
+            this.mebSplints.DefaultValue = "5";
+            this.mebSplints.Location = new System.Drawing.Point(157, 59);
+            this.mebSplints.Mask = "#";
+            this.mebSplints.MaxValue = 9F;
+            this.mebSplints.Name = "mebSplints";
+            this.mebSplints.Size = new System.Drawing.Size(38, 20);
+            this.mebSplints.TabIndex = 2;
+            this.mebSplints.Text = "_";
+            // 
+            // mebSutures
+            // 
+            this.mebSutures.CodeOffset = 2377928;
+            this.mebSutures.DefaultValue = "5";
+            this.mebSutures.Location = new System.Drawing.Point(157, 82);
+            this.mebSutures.Mask = "#";
+            this.mebSutures.MaxValue = 9F;
+            this.mebSutures.Name = "mebSutures";
+            this.mebSutures.Size = new System.Drawing.Size(38, 20);
+            this.mebSutures.TabIndex = 3;
+            this.mebSutures.Text = "_";
+            // 
+            // DCoTEFloatBox16
+            // 
+            this.DCoTEFloatBox16.CodeOffset = 2387234;
+            this.DCoTEFloatBox16.DefaultValue = "0.08";
+            this.DCoTEFloatBox16.Location = new System.Drawing.Point(181, 13);
+            this.DCoTEFloatBox16.Mask = "#,##";
+            this.DCoTEFloatBox16.MaxValue = 9.99F;
+            this.DCoTEFloatBox16.Name = "DCoTEFloatBox16";
+            this.DCoTEFloatBox16.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox16.TabIndex = 0;
+            this.DCoTEFloatBox16.Text = "_.__";
+            // 
+            // DCoTEFloatBox20
+            // 
+            this.DCoTEFloatBox20.CodeOffset = 2387404;
+            this.DCoTEFloatBox20.DefaultValue = "21.0";
+            this.DCoTEFloatBox20.Location = new System.Drawing.Point(148, 36);
+            this.DCoTEFloatBox20.Mask = "##,#";
+            this.DCoTEFloatBox20.MaxValue = 99.9F;
+            this.DCoTEFloatBox20.Name = "DCoTEFloatBox20";
+            this.DCoTEFloatBox20.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox20.TabIndex = 1;
+            this.DCoTEFloatBox20.Text = "__._";
+            // 
+            // DCoTEFloatBox21
+            // 
+            this.DCoTEFloatBox21.CodeOffset = 2377146;
+            this.DCoTEFloatBox21.DefaultValue = "0.05";
+            this.DCoTEFloatBox21.Location = new System.Drawing.Point(157, 13);
+            this.DCoTEFloatBox21.Mask = "#,##";
+            this.DCoTEFloatBox21.MaxValue = 9.99F;
+            this.DCoTEFloatBox21.Name = "DCoTEFloatBox21";
+            this.DCoTEFloatBox21.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox21.TabIndex = 0;
+            this.DCoTEFloatBox21.Text = "_.__";
+            // 
+            // DCoTEFloatBox22
+            // 
+            this.DCoTEFloatBox22.CodeOffset = 2377340;
+            this.DCoTEFloatBox22.DefaultValue = "15";
+            this.DCoTEFloatBox22.Location = new System.Drawing.Point(157, 36);
+            this.DCoTEFloatBox22.Mask = "##";
+            this.DCoTEFloatBox22.MaxValue = 99F;
+            this.DCoTEFloatBox22.Name = "DCoTEFloatBox22";
+            this.DCoTEFloatBox22.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox22.TabIndex = 1;
+            this.DCoTEFloatBox22.Text = "__";
+            // 
+            // DCoTEFloatBox17
+            // 
+            this.DCoTEFloatBox17.CodeOffset = 2383548;
+            this.DCoTEFloatBox17.DefaultValue = "995.0";
+            this.DCoTEFloatBox17.Location = new System.Drawing.Point(106, 13);
+            this.DCoTEFloatBox17.Mask = "###,#";
+            this.DCoTEFloatBox17.MaxValue = 999.9F;
+            this.DCoTEFloatBox17.Name = "DCoTEFloatBox17";
+            this.DCoTEFloatBox17.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox17.TabIndex = 0;
+            this.DCoTEFloatBox17.Text = "___._";
+            // 
+            // DCoTEFloatBox18
+            // 
+            this.DCoTEFloatBox18.CodeOffset = 2383602;
+            this.DCoTEFloatBox18.DefaultValue = "595.0";
+            this.DCoTEFloatBox18.Location = new System.Drawing.Point(106, 36);
+            this.DCoTEFloatBox18.Mask = "###,#";
+            this.DCoTEFloatBox18.MaxValue = 999.9F;
+            this.DCoTEFloatBox18.Name = "DCoTEFloatBox18";
+            this.DCoTEFloatBox18.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox18.TabIndex = 1;
+            this.DCoTEFloatBox18.Text = "___._";
+            // 
+            // DCoTEFloatBox19
+            // 
+            this.DCoTEFloatBox19.CodeOffset = 2383662;
+            this.DCoTEFloatBox19.DefaultValue = "395.0";
+            this.DCoTEFloatBox19.Location = new System.Drawing.Point(106, 59);
+            this.DCoTEFloatBox19.Mask = "###,#";
+            this.DCoTEFloatBox19.MaxValue = 999.9F;
+            this.DCoTEFloatBox19.Name = "DCoTEFloatBox19";
+            this.DCoTEFloatBox19.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox19.TabIndex = 2;
+            this.DCoTEFloatBox19.Text = "___._";
+            // 
+            // DCoTEFloatBox5
+            // 
+            this.DCoTEFloatBox5.CodeOffset = 2374245;
+            this.DCoTEFloatBox5.DefaultValue = "25.0";
+            this.DCoTEFloatBox5.Location = new System.Drawing.Point(106, 112);
+            this.DCoTEFloatBox5.Mask = "##,#";
+            this.DCoTEFloatBox5.MaxValue = 99.9F;
+            this.DCoTEFloatBox5.Name = "DCoTEFloatBox5";
+            this.DCoTEFloatBox5.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox5.TabIndex = 4;
+            this.DCoTEFloatBox5.Text = "__._";
+            // 
+            // mebCrawlSpeed
+            // 
+            this.mebCrawlSpeed.CodeOffset = 2373900;
+            this.mebCrawlSpeed.DefaultValue = "180.0";
+            this.mebCrawlSpeed.Location = new System.Drawing.Point(106, 19);
+            this.mebCrawlSpeed.Mask = "###,#";
+            this.mebCrawlSpeed.MaxValue = 999.9F;
+            this.mebCrawlSpeed.Name = "mebCrawlSpeed";
+            this.mebCrawlSpeed.Size = new System.Drawing.Size(38, 20);
+            this.mebCrawlSpeed.TabIndex = 0;
+            this.mebCrawlSpeed.Text = "___._";
+            // 
+            // mebWalkSpeed
+            // 
+            this.mebWalkSpeed.CodeOffset = 2373967;
+            this.mebWalkSpeed.DefaultValue = "380.0";
+            this.mebWalkSpeed.Location = new System.Drawing.Point(106, 42);
+            this.mebWalkSpeed.Mask = "###,#";
+            this.mebWalkSpeed.MaxValue = 999.9F;
+            this.mebWalkSpeed.Name = "mebWalkSpeed";
+            this.mebWalkSpeed.Size = new System.Drawing.Size(38, 20);
+            this.mebWalkSpeed.TabIndex = 1;
+            this.mebWalkSpeed.Text = "___._";
+            // 
+            // DCoTEFloatBox3
+            // 
+            this.DCoTEFloatBox3.CodeOffset = 2374032;
+            this.DCoTEFloatBox3.DefaultValue = "560.0";
+            this.DCoTEFloatBox3.Location = new System.Drawing.Point(106, 65);
+            this.DCoTEFloatBox3.Mask = "###,#";
+            this.DCoTEFloatBox3.MaxValue = 999.9F;
+            this.DCoTEFloatBox3.Name = "DCoTEFloatBox3";
+            this.DCoTEFloatBox3.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox3.TabIndex = 2;
+            this.DCoTEFloatBox3.Text = "___._";
+            // 
+            // DCoTEFloatBox4
+            // 
+            this.DCoTEFloatBox4.CodeOffset = 2374098;
+            this.DCoTEFloatBox4.DefaultValue = "590.0";
+            this.DCoTEFloatBox4.Location = new System.Drawing.Point(106, 88);
+            this.DCoTEFloatBox4.Mask = "###,#";
+            this.DCoTEFloatBox4.MaxValue = 999.9F;
+            this.DCoTEFloatBox4.Name = "DCoTEFloatBox4";
+            this.DCoTEFloatBox4.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox4.TabIndex = 3;
+            this.DCoTEFloatBox4.Text = "___._";
+            // 
+            // checkBoxInfiniteAmmo
+            // 
+            this.checkBoxInfiniteAmmo.CodeOffset = 0;
+            this.checkBoxInfiniteAmmo.DefaultValue = false;
+            this.checkBoxInfiniteAmmo.Location = new System.Drawing.Point(14, 23);
+            this.checkBoxInfiniteAmmo.Name = "checkBoxInfiniteAmmo";
+            this.checkBoxInfiniteAmmo.Size = new System.Drawing.Size(211, 17);
+            this.checkBoxInfiniteAmmo.TabIndex = 10;
+            this.checkBoxInfiniteAmmo.Text = "Infinite Ammo";
+            // 
+            // dCoTEFloatBox40
+            // 
+            this.dCoTEFloatBox40.CodeOffset = 2398961;
+            this.dCoTEFloatBox40.DefaultValue = "1";
+            this.dCoTEFloatBox40.Location = new System.Drawing.Point(132, 419);
+            this.dCoTEFloatBox40.Mask = "#";
+            this.dCoTEFloatBox40.MaxValue = 9F;
+            this.dCoTEFloatBox40.Name = "dCoTEFloatBox40";
+            this.dCoTEFloatBox40.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox40.TabIndex = 80;
+            this.dCoTEFloatBox40.Text = "_";
+            // 
+            // dCoTEFloatBox41
+            // 
+            this.dCoTEFloatBox41.CodeOffset = 2398928;
+            this.dCoTEFloatBox41.DefaultValue = "8.0";
+            this.dCoTEFloatBox41.Location = new System.Drawing.Point(132, 398);
+            this.dCoTEFloatBox41.Mask = "#,#";
+            this.dCoTEFloatBox41.MaxValue = 9.9F;
+            this.dCoTEFloatBox41.Name = "dCoTEFloatBox41";
+            this.dCoTEFloatBox41.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox41.TabIndex = 77;
+            this.dCoTEFloatBox41.Text = "_._";
+            // 
+            // dCoTEFloatBox42
+            // 
+            this.dCoTEFloatBox42.CodeOffset = 2398906;
+            this.dCoTEFloatBox42.DefaultValue = "50";
+            this.dCoTEFloatBox42.Location = new System.Drawing.Point(132, 377);
+            this.dCoTEFloatBox42.Mask = "##";
+            this.dCoTEFloatBox42.MaxValue = 99F;
+            this.dCoTEFloatBox42.Name = "dCoTEFloatBox42";
+            this.dCoTEFloatBox42.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox42.TabIndex = 74;
+            this.dCoTEFloatBox42.Text = "__";
+            // 
+            // dCoTEFloatBox37
+            // 
+            this.dCoTEFloatBox37.CodeOffset = 2398555;
+            this.dCoTEFloatBox37.DefaultValue = "1";
+            this.dCoTEFloatBox37.Location = new System.Drawing.Point(132, 334);
+            this.dCoTEFloatBox37.Mask = "#";
+            this.dCoTEFloatBox37.MaxValue = 9F;
+            this.dCoTEFloatBox37.Name = "dCoTEFloatBox37";
+            this.dCoTEFloatBox37.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox37.TabIndex = 71;
+            this.dCoTEFloatBox37.Text = "_";
+            // 
+            // dCoTEFloatBox38
+            // 
+            this.dCoTEFloatBox38.CodeOffset = 2398521;
+            this.dCoTEFloatBox38.DefaultValue = "80.0";
+            this.dCoTEFloatBox38.Location = new System.Drawing.Point(132, 313);
+            this.dCoTEFloatBox38.Mask = "##,#";
+            this.dCoTEFloatBox38.MaxValue = 99.9F;
+            this.dCoTEFloatBox38.Name = "dCoTEFloatBox38";
+            this.dCoTEFloatBox38.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox38.TabIndex = 68;
+            this.dCoTEFloatBox38.Text = "__._";
+            // 
+            // dCoTEFloatBox39
+            // 
+            this.dCoTEFloatBox39.CodeOffset = 2398500;
+            this.dCoTEFloatBox39.DefaultValue = "5";
+            this.dCoTEFloatBox39.Location = new System.Drawing.Point(132, 292);
+            this.dCoTEFloatBox39.Mask = "#";
+            this.dCoTEFloatBox39.MaxValue = 9F;
+            this.dCoTEFloatBox39.Name = "dCoTEFloatBox39";
+            this.dCoTEFloatBox39.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox39.TabIndex = 65;
+            this.dCoTEFloatBox39.Text = "_";
+            // 
+            // dCoTEFloatBox34
+            // 
+            this.dCoTEFloatBox34.CodeOffset = 2398149;
+            this.dCoTEFloatBox34.DefaultValue = "8";
+            this.dCoTEFloatBox34.Location = new System.Drawing.Point(132, 250);
+            this.dCoTEFloatBox34.Mask = "#";
+            this.dCoTEFloatBox34.MaxValue = 9F;
+            this.dCoTEFloatBox34.Name = "dCoTEFloatBox34";
+            this.dCoTEFloatBox34.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox34.TabIndex = 62;
+            this.dCoTEFloatBox34.Text = "_";
+            // 
+            // dCoTEFloatBox35
+            // 
+            this.dCoTEFloatBox35.CodeOffset = 2398115;
+            this.dCoTEFloatBox35.DefaultValue = "20.0";
+            this.dCoTEFloatBox35.Location = new System.Drawing.Point(132, 229);
+            this.dCoTEFloatBox35.Mask = "##,#";
+            this.dCoTEFloatBox35.MaxValue = 99.9F;
+            this.dCoTEFloatBox35.Name = "dCoTEFloatBox35";
+            this.dCoTEFloatBox35.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox35.TabIndex = 59;
+            this.dCoTEFloatBox35.Text = "__._";
+            // 
+            // dCoTEFloatBox36
+            // 
+            this.dCoTEFloatBox36.CodeOffset = 2398094;
+            this.dCoTEFloatBox36.DefaultValue = "2";
+            this.dCoTEFloatBox36.Location = new System.Drawing.Point(132, 207);
+            this.dCoTEFloatBox36.Mask = "#";
+            this.dCoTEFloatBox36.MaxValue = 9F;
+            this.dCoTEFloatBox36.Name = "dCoTEFloatBox36";
+            this.dCoTEFloatBox36.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox36.TabIndex = 56;
+            this.dCoTEFloatBox36.Text = "_";
+            // 
+            // dCoTEFloatBox31
+            // 
+            this.dCoTEFloatBox31.CodeOffset = 2397739;
+            this.dCoTEFloatBox31.DefaultValue = "1";
+            this.dCoTEFloatBox31.Location = new System.Drawing.Point(132, 78);
+            this.dCoTEFloatBox31.Mask = "#";
+            this.dCoTEFloatBox31.MaxValue = 9F;
+            this.dCoTEFloatBox31.Name = "dCoTEFloatBox31";
+            this.dCoTEFloatBox31.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox31.TabIndex = 53;
+            this.dCoTEFloatBox31.Text = "_";
+            // 
+            // dCoTEFloatBox32
+            // 
+            this.dCoTEFloatBox32.CodeOffset = 2397705;
+            this.dCoTEFloatBox32.DefaultValue = "20.0";
+            this.dCoTEFloatBox32.Location = new System.Drawing.Point(132, 57);
+            this.dCoTEFloatBox32.Mask = "##,#";
+            this.dCoTEFloatBox32.MaxValue = 99.9F;
+            this.dCoTEFloatBox32.Name = "dCoTEFloatBox32";
+            this.dCoTEFloatBox32.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox32.TabIndex = 50;
+            this.dCoTEFloatBox32.Text = "__._";
+            // 
+            // dCoTEFloatBox33
+            // 
+            this.dCoTEFloatBox33.CodeOffset = 2397684;
+            this.dCoTEFloatBox33.DefaultValue = "9";
+            this.dCoTEFloatBox33.Location = new System.Drawing.Point(132, 36);
+            this.dCoTEFloatBox33.Mask = "#";
+            this.dCoTEFloatBox33.MaxValue = 9F;
+            this.dCoTEFloatBox33.Name = "dCoTEFloatBox33";
+            this.dCoTEFloatBox33.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox33.TabIndex = 47;
+            this.dCoTEFloatBox33.Text = "_";
+            // 
+            // dCoTEFloatBox30
+            // 
+            this.dCoTEFloatBox30.CodeOffset = 2397328;
+            this.dCoTEFloatBox30.DefaultValue = "1";
+            this.dCoTEFloatBox30.Location = new System.Drawing.Point(132, 164);
+            this.dCoTEFloatBox30.Mask = "#";
+            this.dCoTEFloatBox30.MaxValue = 9F;
+            this.dCoTEFloatBox30.Name = "dCoTEFloatBox30";
+            this.dCoTEFloatBox30.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox30.TabIndex = 44;
+            this.dCoTEFloatBox30.Text = "_";
+            // 
+            // dCoTEFloatBox29
+            // 
+            this.dCoTEFloatBox29.CodeOffset = 2397294;
+            this.dCoTEFloatBox29.DefaultValue = "32.0";
+            this.dCoTEFloatBox29.Location = new System.Drawing.Point(132, 142);
+            this.dCoTEFloatBox29.Mask = "##,#";
+            this.dCoTEFloatBox29.MaxValue = 99.9F;
+            this.dCoTEFloatBox29.Name = "dCoTEFloatBox29";
+            this.dCoTEFloatBox29.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox29.TabIndex = 41;
+            this.dCoTEFloatBox29.Text = "__._";
+            // 
+            // dCoTEFloatBox28
+            // 
+            this.dCoTEFloatBox28.CodeOffset = 2397273;
+            this.dCoTEFloatBox28.DefaultValue = "6";
+            this.dCoTEFloatBox28.Location = new System.Drawing.Point(132, 121);
+            this.dCoTEFloatBox28.Mask = "#";
+            this.dCoTEFloatBox28.MaxValue = 9F;
+            this.dCoTEFloatBox28.Name = "dCoTEFloatBox28";
+            this.dCoTEFloatBox28.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox28.TabIndex = 38;
+            this.dCoTEFloatBox28.Text = "_";
+            // 
+            // dCoTEFloatBox27
+            // 
+            this.dCoTEFloatBox27.CodeOffset = 2519082;
+            this.dCoTEFloatBox27.DefaultValue = "200";
+            this.dCoTEFloatBox27.Location = new System.Drawing.Point(132, 355);
+            this.dCoTEFloatBox27.Mask = "###";
+            this.dCoTEFloatBox27.MaxValue = 999F;
+            this.dCoTEFloatBox27.Name = "dCoTEFloatBox27";
+            this.dCoTEFloatBox27.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox27.TabIndex = 35;
+            this.dCoTEFloatBox27.Text = "___";
+            // 
+            // dCoTEFloatBox26
+            // 
+            this.dCoTEFloatBox26.CodeOffset = 2518864;
+            this.dCoTEFloatBox26.DefaultValue = "30";
+            this.dCoTEFloatBox26.Location = new System.Drawing.Point(132, 271);
+            this.dCoTEFloatBox26.Mask = "##";
+            this.dCoTEFloatBox26.MaxValue = 99F;
+            this.dCoTEFloatBox26.Name = "dCoTEFloatBox26";
+            this.dCoTEFloatBox26.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox26.TabIndex = 32;
+            this.dCoTEFloatBox26.Text = "__";
+            // 
+            // dCoTEFloatBox25
+            // 
+            this.dCoTEFloatBox25.CodeOffset = 2518633;
+            this.dCoTEFloatBox25.DefaultValue = "30";
+            this.dCoTEFloatBox25.Location = new System.Drawing.Point(132, 186);
+            this.dCoTEFloatBox25.Mask = "##";
+            this.dCoTEFloatBox25.MaxValue = 99F;
+            this.dCoTEFloatBox25.Name = "dCoTEFloatBox25";
+            this.dCoTEFloatBox25.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox25.TabIndex = 29;
+            this.dCoTEFloatBox25.Text = "__";
+            // 
+            // dCoTEFloatBox24
+            // 
+            this.dCoTEFloatBox24.CodeOffset = 2518408;
+            this.dCoTEFloatBox24.DefaultValue = "50";
+            this.dCoTEFloatBox24.Location = new System.Drawing.Point(132, 99);
+            this.dCoTEFloatBox24.Mask = "##";
+            this.dCoTEFloatBox24.MaxValue = 99F;
+            this.dCoTEFloatBox24.Name = "dCoTEFloatBox24";
+            this.dCoTEFloatBox24.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox24.TabIndex = 26;
+            this.dCoTEFloatBox24.Text = "__";
+            // 
+            // dCoTEFloatBox23
+            // 
+            this.dCoTEFloatBox23.CodeOffset = 2518189;
+            this.dCoTEFloatBox23.DefaultValue = "50";
+            this.dCoTEFloatBox23.Location = new System.Drawing.Point(132, 15);
+            this.dCoTEFloatBox23.Mask = "##";
+            this.dCoTEFloatBox23.MaxValue = 99F;
+            this.dCoTEFloatBox23.Name = "dCoTEFloatBox23";
+            this.dCoTEFloatBox23.Size = new System.Drawing.Size(38, 20);
+            this.dCoTEFloatBox23.TabIndex = 23;
+            this.dCoTEFloatBox23.Text = "__";
+            // 
+            // DCoTEFloatBox9
+            // 
+            this.DCoTEFloatBox9.CodeOffset = 2400128;
+            this.DCoTEFloatBox9.DefaultValue = "0.4";
+            this.DCoTEFloatBox9.Location = new System.Drawing.Point(106, 130);
+            this.DCoTEFloatBox9.Mask = "#,#";
+            this.DCoTEFloatBox9.MaxValue = 9.9F;
+            this.DCoTEFloatBox9.Name = "DCoTEFloatBox9";
+            this.DCoTEFloatBox9.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox9.TabIndex = 5;
+            this.DCoTEFloatBox9.Text = "_._";
+            // 
+            // DCoTEFloatBox1
+            // 
+            this.DCoTEFloatBox1.CodeOffset = 2400079;
+            this.DCoTEFloatBox1.DefaultValue = "0.4";
+            this.DCoTEFloatBox1.Location = new System.Drawing.Point(106, 106);
+            this.DCoTEFloatBox1.Mask = "#,#";
+            this.DCoTEFloatBox1.MaxValue = 9.9F;
+            this.DCoTEFloatBox1.Name = "DCoTEFloatBox1";
+            this.DCoTEFloatBox1.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox1.TabIndex = 4;
+            this.DCoTEFloatBox1.Text = "_._";
+            // 
+            // DCoTEFloatBox2
+            // 
+            this.DCoTEFloatBox2.CodeOffset = 2399893;
+            this.DCoTEFloatBox2.DefaultValue = "4.0";
+            this.DCoTEFloatBox2.Location = new System.Drawing.Point(106, 13);
+            this.DCoTEFloatBox2.Mask = "#,#";
+            this.DCoTEFloatBox2.MaxValue = 9.9F;
+            this.DCoTEFloatBox2.Name = "DCoTEFloatBox2";
+            this.DCoTEFloatBox2.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox2.TabIndex = 0;
+            this.DCoTEFloatBox2.Text = "_._";
+            // 
+            // DCoTEFloatBox6
+            // 
+            this.DCoTEFloatBox6.CodeOffset = 2399936;
+            this.DCoTEFloatBox6.DefaultValue = "1.0";
+            this.DCoTEFloatBox6.Location = new System.Drawing.Point(106, 36);
+            this.DCoTEFloatBox6.Mask = "#,#";
+            this.DCoTEFloatBox6.MaxValue = 9.9F;
+            this.DCoTEFloatBox6.Name = "DCoTEFloatBox6";
+            this.DCoTEFloatBox6.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox6.TabIndex = 1;
+            this.DCoTEFloatBox6.Text = "_._";
+            // 
+            // DCoTEFloatBox7
+            // 
+            this.DCoTEFloatBox7.CodeOffset = 2399982;
+            this.DCoTEFloatBox7.DefaultValue = "0.6";
+            this.DCoTEFloatBox7.Location = new System.Drawing.Point(106, 59);
+            this.DCoTEFloatBox7.Mask = "#,#";
+            this.DCoTEFloatBox7.MaxValue = 9.9F;
+            this.DCoTEFloatBox7.Name = "DCoTEFloatBox7";
+            this.DCoTEFloatBox7.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox7.TabIndex = 2;
+            this.DCoTEFloatBox7.Text = "_._";
+            // 
+            // DCoTEFloatBox8
+            // 
+            this.DCoTEFloatBox8.CodeOffset = 2400031;
+            this.DCoTEFloatBox8.DefaultValue = "0.6";
+            this.DCoTEFloatBox8.Location = new System.Drawing.Point(106, 82);
+            this.DCoTEFloatBox8.Mask = "#,#";
+            this.DCoTEFloatBox8.MaxValue = 9.9F;
+            this.DCoTEFloatBox8.Name = "DCoTEFloatBox8";
+            this.DCoTEFloatBox8.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox8.TabIndex = 3;
+            this.DCoTEFloatBox8.Text = "_._";
+            // 
+            // DCoTEFloatBox10
+            // 
+            this.DCoTEFloatBox10.CodeOffset = 2400441;
+            this.DCoTEFloatBox10.DefaultValue = "0.5";
+            this.DCoTEFloatBox10.Location = new System.Drawing.Point(106, 130);
+            this.DCoTEFloatBox10.Mask = "#,#";
+            this.DCoTEFloatBox10.MaxValue = 9.9F;
+            this.DCoTEFloatBox10.Name = "DCoTEFloatBox10";
+            this.DCoTEFloatBox10.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox10.TabIndex = 5;
+            this.DCoTEFloatBox10.Text = "_._";
+            // 
+            // DCoTEFloatBox11
+            // 
+            this.DCoTEFloatBox11.CodeOffset = 2400414;
+            this.DCoTEFloatBox11.DefaultValue = "0.5";
+            this.DCoTEFloatBox11.Location = new System.Drawing.Point(106, 106);
+            this.DCoTEFloatBox11.Mask = "#,#";
+            this.DCoTEFloatBox11.MaxValue = 9.9F;
+            this.DCoTEFloatBox11.Name = "DCoTEFloatBox11";
+            this.DCoTEFloatBox11.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox11.TabIndex = 4;
+            this.DCoTEFloatBox11.Text = "_._";
+            // 
+            // DCoTEFloatBox12
+            // 
+            this.DCoTEFloatBox12.CodeOffset = 2400315;
+            this.DCoTEFloatBox12.DefaultValue = "1.0";
+            this.DCoTEFloatBox12.Location = new System.Drawing.Point(106, 13);
+            this.DCoTEFloatBox12.Mask = "#,#";
+            this.DCoTEFloatBox12.MaxValue = 9.9F;
+            this.DCoTEFloatBox12.Name = "DCoTEFloatBox12";
+            this.DCoTEFloatBox12.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox12.TabIndex = 0;
+            this.DCoTEFloatBox12.Text = "_._";
+            // 
+            // DCoTEFloatBox13
+            // 
+            this.DCoTEFloatBox13.CodeOffset = 2400336;
+            this.DCoTEFloatBox13.DefaultValue = "1.0";
+            this.DCoTEFloatBox13.Location = new System.Drawing.Point(106, 36);
+            this.DCoTEFloatBox13.Mask = "#,#";
+            this.DCoTEFloatBox13.MaxValue = 9.9F;
+            this.DCoTEFloatBox13.Name = "DCoTEFloatBox13";
+            this.DCoTEFloatBox13.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox13.TabIndex = 1;
+            this.DCoTEFloatBox13.Text = "_._";
+            // 
+            // DCoTEFloatBox14
+            // 
+            this.DCoTEFloatBox14.CodeOffset = 2400360;
+            this.DCoTEFloatBox14.DefaultValue = "0.9";
+            this.DCoTEFloatBox14.Location = new System.Drawing.Point(106, 59);
+            this.DCoTEFloatBox14.Mask = "#,#";
+            this.DCoTEFloatBox14.MaxValue = 9.9F;
+            this.DCoTEFloatBox14.Name = "DCoTEFloatBox14";
+            this.DCoTEFloatBox14.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox14.TabIndex = 2;
+            this.DCoTEFloatBox14.Text = "_._";
+            // 
+            // DCoTEFloatBox15
+            // 
+            this.DCoTEFloatBox15.CodeOffset = 2400387;
+            this.DCoTEFloatBox15.DefaultValue = "0.9";
+            this.DCoTEFloatBox15.Location = new System.Drawing.Point(106, 82);
+            this.DCoTEFloatBox15.Mask = "#,#";
+            this.DCoTEFloatBox15.MaxValue = 9.9F;
+            this.DCoTEFloatBox15.Name = "DCoTEFloatBox15";
+            this.DCoTEFloatBox15.Size = new System.Drawing.Size(38, 20);
+            this.DCoTEFloatBox15.TabIndex = 3;
+            this.DCoTEFloatBox15.Text = "_._";
+            // 
             // Form1
             // 
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(592, 620);
+            this.ClientSize = new System.Drawing.Size(592, 660);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.linkLabel1);
@@ -3152,7 +3165,7 @@ namespace DCoTEPatch
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(608, 659);
             this.Name = "Form1";
-            this.Text = "DCoTE Patcher 1.5";
+            this.Text = "DCoTE Patcher 1.6";
             ((System.ComponentModel.ISupportInitialize)(this.dgSettings)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -3381,7 +3394,14 @@ namespace DCoTEPatch
                 return;
             }
 
-            if (programCode.Length == 2961408)
+            if (programCode.Length == 2961408
+                && programCode[0x40] == 0x56)
+            {
+                tbVersion.Text = "GOG version loaded";
+                SteamVersion = false;
+                D2DVersion = false;
+            }
+            else if (programCode.Length == 2961408)
             {
                 tbVersion.Text = "Original retail version loaded";
                 SteamVersion = false;
@@ -3516,6 +3536,7 @@ namespace DCoTEPatch
             //{
             checkBoxFixBlueLight.Checked = (BatFiles[BatNames._08_boat].Contents[0x1F885] == 0x03);
             checkBoxFixBlueLightShader.Checked = (ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B0] == 0x00);
+            checkBoxModifySkydomeShader.Checked = (ShaderFiles[ShaderNames.Skydome_NoColor].Contents[0x45C] == 0x01);
             //}
             //city of dreams change
             checkBoxExtendedMovie.Checked = (BatFiles[BatNames.misc01_city_of_dreams_03].Contents[3790] == 1);
@@ -3885,6 +3906,15 @@ namespace DCoTEPatch
                 ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1B9] = 0x74;
                 ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1BA] = 0x13;
                 ShaderFiles[ShaderNames.psModulateColorByAlpha].Contents[0x1BB] = 0xBC;
+            }
+
+            if (checkBoxModifySkydomeShader.Checked)
+            {
+                ShaderFiles[ShaderNames.Skydome_NoColor].Contents[0x45C] = 0x01;
+            }
+            else
+            {
+                ShaderFiles[ShaderNames.Skydome_NoColor].Contents[0x45C] = 0x00;
             }
 
             //city of dreams change
