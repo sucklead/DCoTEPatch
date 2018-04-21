@@ -3598,6 +3598,7 @@ namespace DCoTEPatch
                 checkBoxFilmEffects.Checked = (programCode[2117090] != 0x89);
 
                 checkBoxFixedFPS.Checked = (programCode[25485] != 0xC7);
+                checkBoxFixedFPS.Enabled = true;
 
                 if (programCode[2369023] == 0x0A)
                 {
