@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DCoTEPatch 1.6")]
+[assembly: AssemblyTitle("DCoTEPatch 1.7")]
 [assembly: AssemblyDescription("http://dcotetools.sucklead.com")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("dcote@sucklead.com")]
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.6.0.0")]
-[assembly: AssemblyFileVersion("1.6.0.0")]
+[assembly: AssemblyVersion("1.7.0.0")]
+[assembly: AssemblyFileVersion("1.7.0.0")]

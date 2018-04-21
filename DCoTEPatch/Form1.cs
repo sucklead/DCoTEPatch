@@ -224,7 +224,6 @@ namespace DCoTEPatch
         private CheckBox cbBreakStuff;
         private TextBox textBox3;
         private GroupBox gbBugFixes;
-        private CheckBox checkBoxFixBlueLight;
         private TabPage tabPage5;
         private GroupBox groupBoxCheats;
         private DCoTECheckBox checkBoxGodMode;
@@ -319,6 +318,9 @@ namespace DCoTEPatch
         private CheckBox cbDoubleTimeEscapeSequence;
         private CheckBox checkBoxFixBlueLightShader;
         private CheckBox checkBoxModifySkydomeShader;
+        private GroupBox gbLegacyBugFixes;
+        private CheckBox checkBoxFixBlueLight;
+        private CheckBox checkBoxFixedFPS;
 
         /// <summary>
         /// Required designer variable.
@@ -465,7 +467,6 @@ namespace DCoTEPatch
             this.gbBugFixes = new System.Windows.Forms.GroupBox();
             this.checkBoxModifySkydomeShader = new System.Windows.Forms.CheckBox();
             this.checkBoxFixBlueLightShader = new System.Windows.Forms.CheckBox();
-            this.checkBoxFixBlueLight = new System.Windows.Forms.CheckBox();
             this.linkLabelCoCF = new System.Windows.Forms.LinkLabel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupboxXbill = new System.Windows.Forms.GroupBox();
@@ -602,6 +603,9 @@ namespace DCoTEPatch
             this.btnExtractXML = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.gbLegacyBugFixes = new System.Windows.Forms.GroupBox();
+            this.checkBoxFixBlueLight = new System.Windows.Forms.CheckBox();
+            this.checkBoxFixedFPS = new System.Windows.Forms.CheckBox();
             this.checkBoxFilmEffects = new DCoTEPatch.DCoTECheckBox();
             this.checkBoxExtendedMovie = new DCoTEPatch.DCoTECheckBox();
             this.checkBoxAllowLegalSkip = new DCoTEPatch.DCoTECheckBox();
@@ -693,6 +697,7 @@ namespace DCoTEPatch
             this.groupBoxMelee.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.groupBoxAdvancedXML.SuspendLayout();
+            this.gbLegacyBugFixes.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgSettings
@@ -815,6 +820,7 @@ namespace DCoTEPatch
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.gbLegacyBugFixes);
             this.tabPage1.Controls.Add(this.group15Features);
             this.tabPage1.Controls.Add(this.tbVersion);
             this.tabPage1.Controls.Add(this.textBox1);
@@ -835,9 +841,9 @@ namespace DCoTEPatch
             this.group15Features.Controls.Add(this.cbGiveAllWeapons);
             this.group15Features.Controls.Add(this.cbUnlockCinematics);
             this.group15Features.Controls.Add(this.cbUnlockDifficultyLevels);
-            this.group15Features.Location = new System.Drawing.Point(6, 279);
+            this.group15Features.Location = new System.Drawing.Point(6, 335);
             this.group15Features.Name = "group15Features";
-            this.group15Features.Size = new System.Drawing.Size(556, 120);
+            this.group15Features.Size = new System.Drawing.Size(556, 64);
             this.group15Features.TabIndex = 15;
             this.group15Features.TabStop = false;
             this.group15Features.Text = "1.5 Features";
@@ -845,7 +851,7 @@ namespace DCoTEPatch
             // cbDoubleTimeEscapeSequence
             // 
             this.cbDoubleTimeEscapeSequence.AutoSize = true;
-            this.cbDoubleTimeEscapeSequence.Location = new System.Drawing.Point(21, 88);
+            this.cbDoubleTimeEscapeSequence.Location = new System.Drawing.Point(21, 42);
             this.cbDoubleTimeEscapeSequence.Name = "cbDoubleTimeEscapeSequence";
             this.cbDoubleTimeEscapeSequence.Size = new System.Drawing.Size(185, 17);
             this.cbDoubleTimeEscapeSequence.TabIndex = 3;
@@ -855,7 +861,7 @@ namespace DCoTEPatch
             // cbGiveAllWeapons
             // 
             this.cbGiveAllWeapons.AutoSize = true;
-            this.cbGiveAllWeapons.Location = new System.Drawing.Point(21, 65);
+            this.cbGiveAllWeapons.Location = new System.Drawing.Point(310, 42);
             this.cbGiveAllWeapons.Name = "cbGiveAllWeapons";
             this.cbGiveAllWeapons.Size = new System.Drawing.Size(206, 17);
             this.cbGiveAllWeapons.TabIndex = 2;
@@ -865,7 +871,7 @@ namespace DCoTEPatch
             // cbUnlockCinematics
             // 
             this.cbUnlockCinematics.AutoSize = true;
-            this.cbUnlockCinematics.Location = new System.Drawing.Point(21, 42);
+            this.cbUnlockCinematics.Location = new System.Drawing.Point(310, 19);
             this.cbUnlockCinematics.Name = "cbUnlockCinematics";
             this.cbUnlockCinematics.Size = new System.Drawing.Size(235, 17);
             this.cbUnlockCinematics.TabIndex = 1;
@@ -893,9 +899,9 @@ namespace DCoTEPatch
             // 
             // gbBugFixes
             // 
+            this.gbBugFixes.Controls.Add(this.checkBoxFixedFPS);
             this.gbBugFixes.Controls.Add(this.checkBoxModifySkydomeShader);
             this.gbBugFixes.Controls.Add(this.checkBoxFixBlueLightShader);
-            this.gbBugFixes.Controls.Add(this.checkBoxFixBlueLight);
             this.gbBugFixes.Location = new System.Drawing.Point(6, 30);
             this.gbBugFixes.Name = "gbBugFixes";
             this.gbBugFixes.Size = new System.Drawing.Size(556, 95);
@@ -923,16 +929,6 @@ namespace DCoTEPatch
             this.checkBoxFixBlueLightShader.Text = "Modify blue light shader to allow normal completion of sorcerers (no need for abo" +
     "ve workaround) [by Guzz]";
             this.checkBoxFixBlueLightShader.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFixBlueLight
-            // 
-            this.checkBoxFixBlueLight.AutoSize = true;
-            this.checkBoxFixBlueLight.Location = new System.Drawing.Point(21, 19);
-            this.checkBoxFixBlueLight.Name = "checkBoxFixBlueLight";
-            this.checkBoxFixBlueLight.Size = new System.Drawing.Size(367, 17);
-            this.checkBoxFixBlueLight.TabIndex = 0;
-            this.checkBoxFixBlueLight.Text = "Skip the blue light bug! (script will treat sorcerers as killed after 3rd wave)";
-            this.checkBoxFixBlueLight.UseVisualStyleBackColor = true;
             // 
             // linkLabelCoCF
             // 
@@ -963,7 +959,7 @@ namespace DCoTEPatch
             // 
             this.groupboxXbill.Controls.Add(this.checkBoxFilmEffects);
             this.groupboxXbill.Controls.Add(this.checkBoxExtendedMovie);
-            this.groupboxXbill.Location = new System.Drawing.Point(6, 201);
+            this.groupboxXbill.Location = new System.Drawing.Point(6, 257);
             this.groupboxXbill.Name = "groupboxXbill";
             this.groupboxXbill.Size = new System.Drawing.Size(556, 72);
             this.groupboxXbill.TabIndex = 10;
@@ -975,7 +971,7 @@ namespace DCoTEPatch
             this.groupBoxEnhance.Controls.Add(this.checkBoxAllowLegalSkip);
             this.groupBoxEnhance.Controls.Add(this.checkBoxSkipVideos);
             this.groupBoxEnhance.Controls.Add(this.checkBoxReachArm);
-            this.groupBoxEnhance.Location = new System.Drawing.Point(6, 131);
+            this.groupBoxEnhance.Location = new System.Drawing.Point(6, 187);
             this.groupBoxEnhance.Name = "groupBoxEnhance";
             this.groupBoxEnhance.Size = new System.Drawing.Size(556, 64);
             this.groupBoxEnhance.TabIndex = 0;
@@ -2371,6 +2367,37 @@ namespace DCoTEPatch
             this.textBox5.TabIndex = 18;
             this.textBox5.Text = resources.GetString("textBox5.Text");
             // 
+            // gbLegacyBugFixes
+            // 
+            this.gbLegacyBugFixes.Controls.Add(this.checkBoxFixBlueLight);
+            this.gbLegacyBugFixes.Location = new System.Drawing.Point(8, 131);
+            this.gbLegacyBugFixes.Name = "gbLegacyBugFixes";
+            this.gbLegacyBugFixes.Size = new System.Drawing.Size(556, 50);
+            this.gbLegacyBugFixes.TabIndex = 15;
+            this.gbLegacyBugFixes.TabStop = false;
+            this.gbLegacyBugFixes.Text = "Legacy Bug fixes (Use bug fixes now instead)";
+            // 
+            // checkBoxFixBlueLight
+            // 
+            this.checkBoxFixBlueLight.AutoSize = true;
+            this.checkBoxFixBlueLight.Location = new System.Drawing.Point(21, 19);
+            this.checkBoxFixBlueLight.Name = "checkBoxFixBlueLight";
+            this.checkBoxFixBlueLight.Size = new System.Drawing.Size(498, 17);
+            this.checkBoxFixBlueLight.TabIndex = 0;
+            this.checkBoxFixBlueLight.Text = "Skip the blue light bug! (script will treat sorcerers as killed after 3rd wave) [" +
+    "Use blue light shader now]";
+            this.checkBoxFixBlueLight.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFixedFPS
+            // 
+            this.checkBoxFixedFPS.AutoSize = true;
+            this.checkBoxFixedFPS.Location = new System.Drawing.Point(21, 19);
+            this.checkBoxFixedFPS.Name = "checkBoxFixedFPS";
+            this.checkBoxFixedFPS.Size = new System.Drawing.Size(298, 17);
+            this.checkBoxFixedFPS.TabIndex = 3;
+            this.checkBoxFixedFPS.Text = "Fix FPS to 60 to prevent most of the timing bugs [by GOG]";
+            this.checkBoxFixedFPS.UseVisualStyleBackColor = true;
+            // 
             // checkBoxFilmEffects
             // 
             this.checkBoxFilmEffects.CodeOffset = 0;
@@ -3165,7 +3192,7 @@ namespace DCoTEPatch
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(608, 659);
             this.Name = "Form1";
-            this.Text = "DCoTE Patcher 1.6";
+            this.Text = "DCoTE Patcher 1.7";
             ((System.ComponentModel.ISupportInitialize)(this.dgSettings)).EndInit();
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -3203,6 +3230,8 @@ namespace DCoTEPatch
             this.tabPage4.ResumeLayout(false);
             this.groupBoxAdvancedXML.ResumeLayout(false);
             this.groupBoxAdvancedXML.PerformLayout();
+            this.gbLegacyBugFixes.ResumeLayout(false);
+            this.gbLegacyBugFixes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3567,6 +3596,8 @@ namespace DCoTEPatch
 
                 checkBoxFilmEffects.Checked = (programCode[2117090] != 0x89);
 
+                checkBoxFixedFPS.Checked = (programCode[25485] != 0xC7);
+
                 if (programCode[2369023] == 0x0A)
                 {
                     groupBoxEnhance.Enabled = false;
@@ -3639,6 +3670,28 @@ namespace DCoTEPatch
                 {
                     programCode[709783] = 120; //78
                     programCode[709784] = 20;  //14
+                }
+
+                //fixed fps
+                if (checkBoxFixedFPS.Checked)
+                {
+                    programCode[25485] = 0x89;
+                    programCode[25486] = 0x3D;
+
+                    programCode[25491] = 0x90;
+                    programCode[25492] = 0x90;
+                    programCode[25493] = 0x90;
+                    programCode[25494] = 0x90;
+                }
+                else
+                {
+                    programCode[25485] = 0xC7;
+                    programCode[25486] = 0x05;
+
+                    programCode[25491] = 0x00;
+                    programCode[25492] = 0x00;
+                    programCode[25493] = 0x00;
+                    programCode[25494] = 0x80;
                 }
 
                 //infinite ammo
