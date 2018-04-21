@@ -3578,6 +3578,7 @@ namespace DCoTEPatch
             gbBugFixes.Enabled = true;
             if (SteamVersion || D2DVersion)
             {
+                checkBoxFixedFPS.Enabled = false;
                 groupBoxAdvancedXML.Enabled = false;
                 groupBoxWeapons.Enabled = false;
                 groupBoxDamage.Enabled = false;
